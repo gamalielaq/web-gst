@@ -1,0 +1,105 @@
+//Fonts
+@font-face{
+  font-family:"fabfeltscript-bold";
+  src:url("https://fontsme.com/wp-data/f/632/12632/file/FabfeltScript-Bold.otf") format("woff"),
+  url("https://fontsme.com/wp-data/f/632/12632/file/FabfeltScript-Bold.otf") format("opentype"),
+  url("https://fontsme.com/wp-data/f/632/12632/file/FabfeltScript-Bold.otf") format("truetype");
+}
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;1,700&display=swap');
+
+:root {
+  --font-fabfeltscript: "font-fabfeltscript";
+  --bs-font-sans-serif: "DM Sans", sans-serif;
+  --transition: 0.5s;
+}
+
+body {
+  // transform: scale(5);
+  transition: 2S;
+}
+
+// Required for custom bootrap
+@import '../../assets/bootstrap/scss/functions';
+@import '../../assets/bootstrap/scss/variables';
+@import '../../assets/bootstrap/scss/mixins';
+
+//gst colors
+$orange:  #FC931B;
+$cyan:    #31C5F0;
+$gray-0:  #F7F7F7;
+$gray-100:#808080;
+$black:   #1b2526;
+$bs-white:#fff;
+$bs-blue: #004076;
+$transparent: transparent;
+
+
+//Fonts
+$font-sans-seriff: "DM Sans", sans-serif;
+$font-fabfeltscript: "fabfeltscript-bold";
+
+// $carousel-transition: auto;
+
+// Create your own map new colors
+$custom-colors: (
+  "orange": $orange,
+  "warning": $orange,
+  "info" : $cyan,
+  "dark": $black,
+  "default" : $bs-white,
+  "gst-gray": $gray-0,
+  "muted": $gray-100,
+  "blue":$bs-blue,
+  "transparent": $transparent
+);
+
+// Body
+$font-family-base: $font-sans-seriff;
+$body-bg: $gray-0;
+
+//links
+$link-color: var(--bs-white);
+$nav-link-hover-color: #e6e0e0;
+
+// nav
+// $nav-link-padding-y;
+// $nav-link-padding-x:
+$navbar-nav-link-padding-x: 1.3rem;
+
+//Custom button slider
+$carousel-indicator-width: 8px;
+$carousel-indicator-height: 8px;
+
+//Inputs
+$input-border-radius: 0px;
+$input-border-color: $gray-0;
+$input-line-height: 1.9;
+
+$form-select-line-height: 1.9;
+$form-select-border-radius: 0;
+$form-select-border-color: $gray-0;
+
+
+// buttons
+$btn-border-radius: 6px;
+$btn-padding-y: 0.6rem; 
+$btn-padding-x: 2.5rem;
+$btn-close-bg: url('../../assets/img/close.svg');
+
+
+//variables gst
+$section-fs-icon: 2.5rem;
+
+//alerts 
+$alert-background: #ED6A5E;
+
+
+//Modals
+$modal-content-border-radius: 0.5rem;
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+
+@import '../../assets/bootstrap/scss/bootstrap.scss'

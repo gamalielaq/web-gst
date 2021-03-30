@@ -1,0 +1,74 @@
+.slider { 
+
+    //home
+    .slider-image-home {
+        width: 100%;
+        background-image: url('../../assets/img/banner-1.png');
+        object-fit: cover;
+        height: 500px;
+        @media screen and(min-width: 769px){    
+            height: 650px;
+        }
+    }
+
+    //aout use
+    .slide-img-about-use {
+        background-image: url('../../assets/img/banner-2.png');
+        position: absolute;
+        width: 100%;
+        z-index: -1;
+        height: 365px;
+    }
+
+    .slide-content {
+        padding-top: 8.9rem;
+    }
+    .slide-content.content-img-slider {
+        min-height: 365px;
+    };
+    
+    .carousel-item {
+
+        .img-carousel {
+            height: 660px;
+        }
+
+        .carousel-caption {
+
+            h1 {
+                
+                @media screen and(min-width: 720px){
+
+                    font-size: 60px;
+                    max-width: 555px;
+                    line-height: 58px;    
+
+                }
+                
+            } 
+
+            button {
+                background: #FC931B;
+                color: white;
+                border-radius: 2rem;
+                padding-left: 2rem;
+            }  
+
+        }
+    }
+    
+}
+.slider.slide-img {
+    background-image: url('../../assets/img/banner-2.png');
+    // position: absolute;
+    width: 100%;
+    z-index: -1;
+    // height: 365px;
+}
+
+
+
+.carousel-caption {
+    top: 0;
+    height: 100%;
+}
