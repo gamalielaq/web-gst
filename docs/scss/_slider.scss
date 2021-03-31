@@ -5,6 +5,7 @@
         width: 100%;
         background-image: url('../../assets/img/banner-1.png');
         object-fit: cover;
+        background-repeat: no-repeat;
         height: 500px;
         @media screen and(min-width: 769px){    
             height: 650px;
@@ -14,6 +15,7 @@
     //aout use
     .slide-img-about-use {
         background-image: url('../../assets/img/banner-2.png');
+        background-repeat: no-repeat;
         position: absolute;
         width: 100%;
         z-index: -1;
@@ -66,9 +68,25 @@
     // height: 365px;
 }
 
-
-
 .carousel-caption {
     top: 0;
     height: 100%;
 }
+
+.carousel-control-next {
+    &:hover {
+        .carousel-control-next-icon {
+            transition: 0.5s;
+            background-image: url('../../assets/img/btn-next-hover.svg');
+        }
+    }
+}
+.carousel-control-prev {
+    &:hover {
+        .carousel-control-prev-icon {
+            transition: 0.5s;
+            background-image: url('../../assets/img/btn-prev-hover.svg');
+        }
+    }
+}
+

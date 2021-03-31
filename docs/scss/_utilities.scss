@@ -361,10 +361,10 @@ $sides: (x ,y, all, top, bottom, left, right);
     top: 0;
     width: 100%;
 }
-.btn-rounded {
-    display: flex;
-    line-height: normal;
-    width: 25px;
-    height: 26px;
-    align-items: center;
+
+.active-info {
+    color: var(--bs-info) !important;
+}
+.active-orange {
+    color: var(--bs-orange) !important;
 }

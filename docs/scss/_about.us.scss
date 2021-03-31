@@ -166,15 +166,31 @@
 
         .card-body { 
             ul li {
-                .btn-rounded {
-                    cursor: pointer;
-                    color: var(--bs-info);
-                    border: 1px solid var(--bs-info);
+                .icon-go {
+                    background-image: url('../../assets/img/go.svg');
+                    background-repeat: no-repeat;
+                    width: 35px;
+                    height: 35px;
+                    margin-left: 5px;
+                    &:hover {
+                        cursor: pointer;
+                    }
                 }
             }
         }
     }
     
+}
+
+//
+// section-creation-gst
+.text-gray {
+    color: #6c757d9e; 
+}
+.section-creation-gst {
+    .creation-list {
+
+    }
 }
 
 // -------------------------------------

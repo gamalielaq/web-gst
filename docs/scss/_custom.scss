@@ -57,6 +57,16 @@ $custom-colors: (
 $font-family-base: $font-sans-seriff;
 $body-bg: $gray-0;
 
+//carousel
+$carousel-control-prev-icon-bg: url('../../assets/img/btn-prev.svg');
+$carousel-control-next-icon-bg: url('../../assets/img/btn-next.svg');
+// $carousel-control-prev-hover-icon-bg
+// $carousel-control-next-hover-icon-bg
+$carousel-control-opacity: 1;
+$carousel-control-color: red;
+$carousel-control-icon-width: 3rem;
+$carousel-control-icon-width: 3rem;
+
 //links
 $link-color: var(--bs-white);
 $nav-link-hover-color: #e6e0e0;
