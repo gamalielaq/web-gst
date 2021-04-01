@@ -13,13 +13,27 @@
     height: 650px;
   }
 }
-.slider .slide-img-about-use {
-  background-image: url("../../assets/img/banner-2.png");
-  background-repeat: no-repeat;
+.slider .slide-img-banner {
   position: absolute;
   width: 100%;
   z-index: -1;
-  height: 365px;
+}
+@media screen and (max-width: 769px) {
+  .slider .slide-img-banner {
+    height: 365px;
+    object-fit: cover;
+  }
+}
+.slider .slide-img-about-use {
+  position: absolute;
+  width: 100%;
+  z-index: -1;
+}
+@media screen and (max-width: 769px) {
+  .slider .slide-img-about-use {
+    height: 365px;
+    object-fit: cover;
+  }
 }
 .slider .slide-content {
   padding-top: 8.9rem;
@@ -45,7 +59,7 @@
 }
 
 .slider.slide-img {
-  background-image: url("../../assets/img/banner-2.png");
+  background-image: url("../../assets/img/banner-3.png");
   width: 100%;
   z-index: -1;
 }
@@ -136,10 +150,6 @@
   --font-fabfeltscript: "font-fabfeltscript";
   --bs-font-sans-serif: "DM Sans", sans-serif;
   --transition: 0.5s;
-}
-
-body {
-  transition: 2S;
 }
 
 /*!
@@ -11471,17 +11481,6 @@ textarea.form-control-lg {
   color: #ed6a5e;
 }
 
-.carousel-test .carousel-content {
-  color: red;
-}
-.carousel-test .carousel-control-next {
-  color: red;
-}
-
-.carousel-text {
-  color: red;
-}
-
 /*
     Use class: p-p or m-m and  prefix t, r, b, l --> value 0 to 10
     example: p-p-0 , p-pt-5  ---  m-m-2 , m-ml-3
@@ -12290,6 +12289,18 @@ textarea.form-control-lg {
   font-size: 9px;
 }
 
+.fs-10px {
+  font-size: 10px;
+}
+
+.fs-11px {
+  font-size: 11px;
+}
+
+.fs-12px {
+  font-size: 12px;
+}
+
 .w-50 {
   width: 50% !important;
 }
@@ -12414,6 +12425,11 @@ textarea.form-control-lg {
 
   .p-p-md-5 {
     padding: 5rem !important;
+  }
+
+  .p-px-md-7 {
+    padding-right: 7rem;
+    padding-left: 7rem;
   }
 }
 @media screen and (min-width: 992px) {
@@ -12580,6 +12596,14 @@ textarea.form-control-lg {
   color: var(--bs-orange) !important;
 }
 
+.text-justify {
+  text-align: justify !important;
+}
+
+.text-gray {
+  color: #6c757d9e;
+}
+
 .section-card .icon {
   color: var(--bs-info);
   font-size: 2.5rem;
@@ -12720,11 +12744,6 @@ textarea.form-control-lg {
   width: 100%;
 }
 
-.social-media a {
-  color: var(--bs-white);
-  opacity: 0.7;
-}
-
 .sub-nav .active a {
   color: var(--bs-orange);
 }
@@ -12819,16 +12838,16 @@ textarea.form-control-lg {
   cursor: pointer;
 }
 
-.text-gray {
-  color: #6c757d9e;
-}
-
 .section-team-work .btn-next, .section-team-work .btn-prev {
   top: calc(100% - 63%);
 }
 
 .swiper-contract-service .card .card-body .price {
   border-bottom: 1px solid white;
+}
+
+.alert-danger {
+  color: #ED6A5E;
 }
 
 .nav-default li .nav-link {
@@ -12871,7 +12890,7 @@ textarea.form-control-lg {
 }
 
 .form-input-gray input, .form-input-gray textarea, .form-input-gray select {
-  background: #F7F7F7;
+  background-color: #F7F7F7;
 }
 .form-input-gray ::-webkit-input-placeholder {
   color: #212F31;
@@ -12880,20 +12899,35 @@ textarea.form-control-lg {
 .form-login {
   position: relative;
 }
-.form-login .bg-image {
+.form-login .bg-login {
   width: 100%;
   height: 100vh;
+  object-fit: cover;
 }
 .form-login .login-content {
   position: absolute;
   top: 0;
-  background: #00407657;
+}
+.form-login .login-content .close {
+  position: absolute;
+  top: 0;
+  right: 0;
+  padding: 1rem;
+  color: #ffffff;
+}
+.form-login .login-content .close:hover {
+  cursor: pointer;
 }
 .form-login .card {
   border-radius: 5px;
 }
 .form-login .card .card-body {
   padding: 1rem 1.5rem;
+}
+.form-login .card .card-body .btn-secondary {
+  background: #F7F7F7;
+  border-color: #F7F7F7;
+  color: #3a3030;
 }
 @media screen and (min-width: 1201px) {
   .form-login .card .card-body {
@@ -12963,16 +12997,28 @@ textarea.form-control-lg {
   display: flex;
   align-items: center;
 }
-.footer address .social-media a {
-  text-decoration: none;
-  padding: 0 0.8rem;
-}
 .footer .footer-copyright p {
   font-size: 14px;
 }
 .footer .footer-copyright span {
   margin: 0;
   opacity: 0.8;
+}
+
+.social, .social-media.dark a, .social-media a {
+  text-decoration: none;
+  padding: 0 0.8rem;
+}
+
+.social-media a {
+  color: var(--bs-white);
+  opacity: 0.7;
+}
+
+.social-media.dark a {
+  color: var(--bs-dark);
+  color: #000000;
+  opacity: 1;
 }
 
 /*# sourceMappingURL=style.css.map */

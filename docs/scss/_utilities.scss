@@ -9,7 +9,6 @@
 }
 
 //padding and margins
-
 /*
     Use class: p-p or m-m and  prefix t, r, b, l --> value 0 to 10
     example: p-p-0 , p-pt-5  ---  m-m-2 , m-ml-3
@@ -125,6 +124,15 @@ $sides: (x ,y, all, top, bottom, left, right);
 .fs-9px {
     font-size: 9px;
 }
+.fs-10px {
+    font-size: 10px;
+}
+.fs-11px {
+    font-size: 11px;
+}
+.fs-12px {
+    font-size: 12px;
+}
 
 
 .w-50 {
@@ -229,6 +237,11 @@ $sides: (x ,y, all, top, bottom, left, right);
     }
     .p-p-md-5 {
         padding: 5rem !important;
+    }
+
+    .p-px-md-7 {
+        padding-right: 7rem;
+        padding-left: 7rem;
     }
 }
 @media screen and(min-width: 992px ) {
@@ -367,4 +380,14 @@ $sides: (x ,y, all, top, bottom, left, right);
 }
 .active-orange {
     color: var(--bs-orange) !important;
+}
+
+//texts
+.text-justify {
+    text-align: justify !important;
+}
+
+//Colors
+.text-gray {
+    color: #6c757d9e; 
 }

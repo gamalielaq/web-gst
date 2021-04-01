@@ -27,36 +27,36 @@
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <a class="navbar-brand me-auto" href="#">
                         <div class="img-logo"></div>
-                    <ul class="navbar-nav  mb-2 mb-lg-0 me-5">
-                        <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Nosotros</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Servicios</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Blog</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Contáctanos</a>
-                        </li>
-                    </ul>
-                    <form class="d-flex">
-                        <div class="btn-group me-5">
-                            <button class="btn btn-transparent btn-sm dropdown-toggle" type="button"
-                                data-bs-toggle="dropdown" aria-expanded="false">
-                                <img src="../assets/img/flag-es.svg" alt="">
-                            </button>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item text-info" href="#">ES</a></li>
-                                <li><a class="dropdown-item text-info" href="#">PE</a></li>
-                            </ul>
-                        </div>
-                        <button class="btn btn-outline-default" type="submit">Ingresar</button>
-                    </form>
+                        <ul class="navbar-nav  mb-2 mb-lg-0 me-5">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Nosotros</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Servicios</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Blog</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Contáctanos</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <div class="btn-group me-5">
+                                <button class="btn btn-transparent btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img src="../assets/img/flag-es.svg" alt="">
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-info" href="#">ES</a></li>
+                                    <li><a class="dropdown-item text-info" href="#">PE</a></li>
+                                </ul>
+                            </div>
+                            <button class="btn btn-outline-default" type="submit">Ingresar</button>
+                        </form>
                 </div>
             </div>
         </nav>
@@ -68,8 +68,8 @@
     <div class="main">
         <img class="w-100" src="../assets/img/banner-2.png" height="300px" alt="">
         <article class="warapepr position-absolute top-0 w-100 m-mt-7">
+
             <section class="slider">
-                <!-- <div class="slide-img"></div> -->
                 <div class="container p-pt-4 p-pb-4">
                     <div class="row">
                         <div class="col-12 col-md-4 col-xl-4 mb-3">
@@ -95,8 +95,8 @@
                             <div class="card rounded-5 border-0 h-100">
                                 <div class="card-body p-4">
                                     <h3 class="card-title fw-bold mb-4">Mis servicios</h3>
-                                    <div class="alert alert-danger" role="alert">
-                                        Tienes <a href="http://">01 servicio</a>por expirar.
+                                    <div class="alert alert-danger d-flex justify-content-center border-0" role="alert">
+                                        <i class="icon-alert"></i> Tienes <strong class="ms-2">01 servicio</strong> por expirar.
                                     </div>
                                     <div class="row">
                                         <div class="col-12 col-md-6">
@@ -109,7 +109,7 @@
                                                         <a class="text-info text-decoration-none">12:00 p.m.</a>
                                                     </span>
                                                     <button type="button" class="btn btn-outline-info"
-                                                        data-bs-toggle="modal" data-bs-target="#exampleModal"
+                                                        data-bs-toggle="modal" data-bs-target="#suscriptionModal"
                                                         data-bs-whatever="@mdo">
                                                         <span class="fw-500">Renovar ahora</span>
                                                     </button>
@@ -123,6 +123,7 @@
                     </div>
                 </div>
             </section>
+
             <footer class="footer">
                 <div class="d-flex flex-column align-items-center justify-content-center footer-warapepr"
                     style="background: #212F31; color: #FFFFFF;">
@@ -192,7 +193,7 @@
             </footer>
 
             <!-- Modal Suscription -->
-            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
+            <div class="modal fade" id="suscriptionModal" tabindex="-1" aria-labelledby="suscriptionModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-lg modal-dialog-centered">
                     <div class="modal-content border-0">
@@ -200,7 +201,7 @@
                             data-bs-dismiss="modal" aria-label="Close">
                         </button>
                         <div class="modal-header border-0">
-                            <h2 class="modal-title w-100 text-center mt-3" id="exampleModalLabel">Renovar suscripción
+                            <h2 class="modal-title w-100 text-center mt-3" id="suscriptionModalLabel">Renovar suscripción
                             </h2>
                         </div>
                         <div class="modal-body">
@@ -212,9 +213,11 @@
                                         <textarea class="form-control"></textarea>
                                     </div>
                                     <div class="mb-4">
-                                        <button class="btn btn-info text-white" data-bs-toggle="modal"
-                                            data-bs-target="#purchaseMadeModal" data-bs-whatever="@mdo">Ir a pagar
-                                        </button>
+                                        <button type="button" class="btn btn-outline-info"
+                                        data-bs-toggle="modal" data-bs-target="#purchaseMadeModal"
+                                        data-bs-whatever="@mdo">
+                                        <span class="fw-500">Ir a pagar</span>
+                                    </button>
                                     </div>
                                 </div>
                             </form>
@@ -238,7 +241,7 @@
                                 <h2 class="modal-title w-100 text-center fs-2 mt-3 mb-4" id="exampleModalLabel">
                                     Compra Realizada
                                 </h2>
-                                <p class="text-muted mb-5">
+                                <p class="text-muted text-center mb-5">
                                     Tu compra ha sido realizada con éxito.
                                 </p>
                                 <button class="btn btn-info text-white mb-4" data-bs-toggle="modal"
@@ -265,7 +268,7 @@
                                 <h2 class="modal-title w-100 text-center fs-2 mt-3 mb-4" id="exampleModalLabel">
                                     Compra no realizada
                                 </h2>
-                                <p class="text-muted mb-5">
+                                <p class="text-muted text-center mb-5">
                                     Tu compra no pudo ser procesada. Por favor, intenta en unos minutos.
                                 </p>
                                 <button class="btn btn-info text-white mb-4">Volver a inicio</button>
@@ -275,7 +278,7 @@
                 </div>
             </div>
 
-            <!-- Contract service -->
+            <!--Modal contract service -->
             <div class="modal fade" id="contractServiceModal" tabindex="-1" aria-labelledby="contractServiceModalLabel"
                 aria-hidden="true">
                 <div class="modal-dialog modal-xl modal-dialog-centered">
@@ -288,60 +291,138 @@
                                 servicio</h2>
                         </div>
                         <div class="modal-body">
-                            <section class="section-services position-relative bg-white">
+                            <section class="section-services position-relative bg-white p-4">
 
                                 <div class="d-flex justify-content-center mb-5">
                                     <div class="btn-group" role="group" aria-label="Basic mixed styles example">
-                                        <button type="button" class="btn btn-info text-white">Mensual</button>
-                                        <button type="button" class="btn btn-default">Anual</button>
+                                        <button type="button" class="btn btn-info text-white">MENSUAL</button>
+                                        <button type="button" class="btn btn-default">ANUAL</button>
                                     </div>
                                 </div>
 
-                                <div class="">
-
-                                    <div class="swiper-contract-service swiper-container">
-                                        <div class="swiper-wrapper">
-                                            <div class="swiper-slide">
-                                                <div class="card rounded-5 mb-3">
-                                                    <div class="card-body p-4">
-                                                        <h5 class="card-title fw-bold text-info text-center mb-3">GISSAT
-                                                        </h5>
-                                                        <div
-                                                            class="d-flex justify-content-center align-items-center price pb-3 mb-2">
-                                                            <span class="fw-500 fs-3">S/1600</span><span
-                                                                class="text-muted">/mes</span>
+                                <div id="carouselContractService" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h5 class="card-title fw-bold text-info text-center mb-3">
+                                                                GISSAT
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-2">
+                                                                <span class="fw-500 fs-3">S/1600</span><span
+                                                                    class="text-muted">/mes</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex flex-column mb-3">
-                                                            <span class="p-2 text-muted">
-                                                                Acceso ilimitado
-                                                            </span>
-                                                            <span class="p-2 text-muted">
-                                                                Soporte las 24 hrs
-                                                            </span>
-                                                            <span class="p-2 text-muted">
-                                                                Capacitación gratuita
-                                                            </span>
-                                                            <span class="p-2 text-muted">
-                                                                Máximo 1,000 colaboradores
-                                                            </span>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h5 class="card-title fw-bold text-info text-center mb-3">
+                                                                Inspecciones de seguridad
+                                                                plan
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-2">
+                                                                <span class="fw-500 fs-3">S/1600</span><span
+                                                                    class="text-muted">/mes</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
                                                         </div>
-                                                        <div class="d-flex justify-content-center">
-                                                            <button class="btn btn-info text-white">Escoger
-                                                                plan</button>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h5 class="card-title fw-bold text-info text-center mb-3">
+                                                                Capacitaciones
+                                                            </h5>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-2">
+                                                                <span class="fw-500 fs-3">S/1600</span><span
+                                                                    class="text-muted">/mes</span>
+                                                            </div>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
+
+
                                         </div>
-                                        <div class="btn-prev icon-arrow-left"></div>
-                                        <div class="btn-next icon-arrow-rigth"></div>
                                     </div>
+                                    <button class="carousel-control-prev" type="button"
+                                        data-bs-target="#carouselContractService" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button"
+                                        data-bs-target="#carouselContractService" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
                                 </div>
                             </section>
                         </div>
                     </div>
                 </div>
             </div>
+
         </article>
 
     </div>

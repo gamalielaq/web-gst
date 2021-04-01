@@ -23,12 +23,6 @@
                 align-items: center;
             }
         }
-        .social-media {
-            a {
-                text-decoration: none;
-                padding: 0 0.8rem;
-            }
-        }
     }
     .footer-copyright {
         p {
@@ -39,4 +33,26 @@
             opacity: 0.8;
         }
     }
+}
+
+.social {
+    text-decoration: none;
+    padding: 0 0.8rem;
+}
+.social-media {
+    a {
+        @extend .social;    
+        color: var(--bs-white);
+        opacity: 0.7;
+    }
+}
+
+.social-media.dark {
+    a { 
+        @extend .social;    
+        color: var(--bs-dark);
+        color: #000000;
+        opacity: 1;
+    }
+    
 }

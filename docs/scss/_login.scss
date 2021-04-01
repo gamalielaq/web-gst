@@ -11,7 +11,9 @@
 }
 
 .pagination {
+
     justify-content: center;
+
     .item-pagination {
         display: flex;
         align-items: center;
@@ -42,7 +44,7 @@
 }
 .form-input-gray {
     input, textarea, select {
-        background: #F7F7F7;
+        background-color: #F7F7F7;
     }
     ::-webkit-input-placeholder { 
         color: #212F31;
@@ -55,15 +57,27 @@
 
     position: relative;
 
-    .bg-image {
+    .bg-login {
         width: 100%;
         height: 100vh;
+        object-fit: cover;
     }
 
     .login-content {
+
         position: absolute;
         top: 0;
-        background:#00407657;
+
+        .close {
+            position: absolute;
+            top: 0;
+            right: 0;
+            padding: 1rem;
+            color: #ffffff;
+            &:hover {
+                cursor: pointer;
+            }
+        }
     }
 
     .card {
@@ -72,6 +86,12 @@
 
         .card-body {
             padding: 1rem 1.5rem;
+
+            .btn-secondary {
+                background: #F7F7F7;    
+                border-color: #F7F7F7;
+                color: #3a3030;    
+            }
         }
     }
 
@@ -98,6 +118,7 @@
         width: 0px;
         transition: width 0.3s;
     }
+
     position: fixed;
     z-index: 1;
     bottom: calc(100% - 90%);
@@ -107,6 +128,7 @@
     border-radius: 0.5rem;
     transition: width 0.3s;
     width: 70px;
+    
     i {
         transition: 0.5s;
         font-size: 2.3rem;
@@ -121,8 +143,6 @@
             opacity: 1;
         }
     }
-
-
     
     &:hover {
         cursor: pointer;

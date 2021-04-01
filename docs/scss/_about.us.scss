@@ -1,6 +1,4 @@
 .sub-nav {
-
-    // z-index: 0;
     
     .active {
         a {
@@ -32,58 +30,6 @@
     }
 }
 
-// .gst-creation {
-
-//     .swp-creation-gst { 
-//         height: 300px;
-//         width: 300px;
-//     }
-
-//     .swiper-slide {
-//         background-position: center;
-//         background-size: cover;
-//     }
-
-// }
- 
-// ---------------------------------------------------------------
-
-// .gst-sweep {
-//     position: relative;
-//     height: 100%;
-//     img {
-//         transform:initial !important;
-//     }
-// }
-// .gst-content-sweep { 
-//     position: absolute;
-//     top: 0;
-// }
-// .sweep-to-top .gst-content-sweep {
-//     transform-origin: bottom;
-// }
-// .sweep-to-botton .gst-content-sweep {
-//     transform-origin: top;
-// }
-// .gst-content-sweep {
-//     background: transparent linear-gradient(180deg, #31A7F0 0%, #2DC8DD 100%) 0% 0% no-repeat padding-box;
-//     cursor: pointer;
-//     opacity: 0.75;
-//     width: 100%;
-//     height: 100%;
-//     transform: scaleY(0);
-//     transition: transform 0.50s ease;
-// }
-// .gst-sweep:hover {
-//     .gst-content-sweep { 
-//         transform: scaleY(1);
-//     }
-// }
-
-// ------------------------------------------------------------------
-
-
-
 
 .gst-sweep {
     position: relative;
@@ -96,29 +42,18 @@
     position: absolute;
     top: 0;
 }
-.sweep-to-top .gst-content-sweep {
-    // transform-origin: bottom;
-}
-.sweep-to-botton .gst-content-sweep {
-    // transform-origin: top;
-}
 .gst-content-sweep {
     opacity: 0;
-    // background: transparent linear-gradient(180deg, #31A7F0 0%, #2DC8DD 100%) 0% 0% no-repeat padding-box;
     cursor: pointer;
     width: 100%;
     height: 100%;
-    // transform: scaleY(0);
-    // transition: transform 0.50s ease;
 }
 .gst-sweep:hover {
     .gst-content-sweep { 
-        // transform: scaleY(1);
         opacity: 1;
         transition: 1.5s;
     }
 }
-
 .gst-content-sweep {
     .gst-body {
         height: 90%;
@@ -150,6 +85,7 @@
         }
     }
 }
+
 // -------------------------------------
 .section-corporate-identity {
     .card {
@@ -180,17 +116,6 @@
         }
     }
     
-}
-
-//
-// section-creation-gst
-.text-gray {
-    color: #6c757d9e; 
-}
-.section-creation-gst {
-    .creation-list {
-
-    }
 }
 
 // -------------------------------------
