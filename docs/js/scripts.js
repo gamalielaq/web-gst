@@ -165,10 +165,7 @@ $(window).scroll(function(){
 });
 
 
-// var myCarousel = document.getElementById('carouselExampleIndicators')
-
-// myCarousel.addEventListener('slid.bs.carousel', function () {
-//   myCarousel.getRootNode();
-//   console.log(myCarousel);
-// })
-
+//loader
+window.onload = function() {
+  $('#loader').fadeOut();
+}
