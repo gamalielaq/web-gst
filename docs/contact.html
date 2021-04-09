@@ -24,15 +24,17 @@
     <header class="topbar" id="topbar">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex justify-content-between align-items-center d-sm-none w-100">
+                    <div class="img-logo"></div>
+                    <button class="btn btn-outline-default px-3 py-1" type="button" data-bs-toggle="collapse"
+                        id="btnCollapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-text-right"></i>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <a class="navbar-brand me-auto" href="#">
-                        <div class="img-logo"></div>
-                        <!-- <img style="width: 125px;" src="../assets/img/logo-white.svg" alt="Logo GISSAT"></a> -->
+                        <div class="img-logo d-none d-sm-block"></div>
                         <ul class="navbar-nav  mb-2 mb-lg-0 m-mr-6">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
@@ -54,12 +56,17 @@
                             <div class="btn-group m-mr-3">
                                 <button class="btn btn-transparent btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <!-- <img src="../assets/img/flag-es.svg" alt=""> -->
-                                    <img src="../assets/img/es.svg" alt=""><span class="text-white ms-2">ES</span>
+                                    <img src="../assets/img/es.svg" alt=""><span class="ms-2">ESP</span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item text-info" href="#">ES</a></li>
-                                    <li><a class="dropdown-item text-info" href="#">PE</a></li>
+                                    <li><a class="dropdown-item text-info" href="#">
+                                            <img src="../assets/img/es.svg" alt=""><span class="ms-2">ESP</span>
+                                        </a></li>
+                                    <li>
+                                        <a class="dropdown-item text-info" href="#">
+                                            <img src="../assets/img/es.svg" alt=""><span class="ms-2">PER</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <a class="btn btn-outline-default" href="login.html">Ingresar</a>

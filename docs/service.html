@@ -25,15 +25,17 @@
     <header class="topbar" id="topbar">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
+                <div class="d-flex justify-content-between align-items-center d-sm-none w-100">
+                    <div class="img-logo"></div>
+                    <button class="btn btn-outline-default px-3 py-1" type="button" data-bs-toggle="collapse"
+                        id="btnCollapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-text-right"></i>
+                    </button>
+                </div>
                 <div class="collapse navbar-collapse" id="navbarSupportedContent">
                     <a class="navbar-brand me-auto" href="#">
-                        <div class="img-logo"></div>
-                        <!-- <img style="width: 125px;" src="../assets/img/logo-white.svg" alt="Logo GISSAT"></a> -->
+                        <div class="img-logo d-none d-sm-block"></div>
                         <ul class="navbar-nav  mb-2 mb-lg-0 m-mr-6">
                             <li class="nav-item">
                                 <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
@@ -55,12 +57,17 @@
                             <div class="btn-group m-mr-3">
                                 <button class="btn btn-transparent btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <!-- <img src="../assets/img/flag-es.svg" alt=""> -->
-                                    <img src="../assets/img/es.svg" alt=""><span class="text-white ms-2">ES</span>
+                                    <img src="../assets/img/es.svg" alt=""><span class="ms-2">ESP</span>
                                 </button>
                                 <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item text-info" href="#">ES</a></li>
-                                    <li><a class="dropdown-item text-info" href="#">PE</a></li>
+                                    <li><a class="dropdown-item text-info" href="#">
+                                            <img src="../assets/img/es.svg" alt=""><span class="ms-2">ESP</span>
+                                        </a></li>
+                                    <li>
+                                        <a class="dropdown-item text-info" href="#">
+                                            <img src="../assets/img/es.svg" alt=""><span class="ms-2">PER</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <a class="btn btn-outline-default" href="login.html">Ingresar</a>
@@ -80,7 +87,6 @@
             <!-- Start slider -->
             <!-------------------------------------------------  -->
             <section class="slider">
-                <!-- <div class="slide-img-about-use"></div> -->
                 <img class="slide-img-banner" src="../assets/img/banner-services.png" alt="">
                 <div class="slide-content gst-container d-flex flex-column align-items-center justify-content-center">
                     <div class="m-mb-8">
@@ -138,11 +144,13 @@
             <!-- End slider -->
             <!-------------------------------------------------  -->
 
+
             <!-- Benefits -->
             <section class="section-benefits pb-4">
-                <img class="bg-benefits position-absolute w-100" src="../assets/img/bg-benefits.png" width="100%" alt="">
+                <img class="bg-benefits position-absolute w-100" src="../assets/img/bg-benefits.png" width="100%"
+                    alt="">
 
-                    <div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-test"
+                <div id="carouselExampleIndicators" class="carousel slide carousel-fade carousel-test"
                     data-bs-ride="carousel">
                     <div class="carousel-indicators">
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
@@ -152,23 +160,23 @@
                         <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
                             aria-label="Slide 3"></button>
                     </div>
-                    <div class="row">
+                    <div class="d-flex flex-wrap">
                         <div class="col-12 col-md-6">
-                            <div class="carousel-inner p-pb-4">
+                            <div class="carousel-inner">
                                 <div class="carousel-item active">
-                                    <img src="../assets/img/pc-1.png" class="d-block w-80" alt="...">
+                                    <img src="../assets/img/pc-1.png" class="w-80" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/img/pc-2.png" class="d-block w-80" alt="...">
+                                    <img src="../assets/img/pc-2.png" class="w-80" alt="...">
                                 </div>
                                 <div class="carousel-item">
-                                    <img src="../assets/img/pc-1.png" class="d-block w-80" alt="...">
+                                    <img src="../assets/img/pc-1.png" class="w-80" alt="...">
                                 </div>
                             </div>
                         </div>
                         <div class="col-12 col-md-6">
-                            <div class="p-4 p-px-md-7 p-py-2">
-                                <h3>Conoce los beneficios de <p class="text-info">GISSAT</p>
+                            <div class="p-4 p-px-md-7">
+                                <h3>Conoce los beneficios de<p class="text-info">GISSAT</p>
                                 </h3>
                                 <p class="text-muted">Es un hecho establecido hace demasiado tiempo que un lector se
                                     distraerá con el contenido del texto.</p>
@@ -180,17 +188,18 @@
                                             <i class="icon-check me-1 fs-12px"></i>
                                             Acceso rápido y seguro
                                         </li>
-                                        <li class="text-muted p-2"
-                                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1">
+                                        <li class="text-muted p-2" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="1">
                                             <i class="icon-check me-1 fs-12px"></i>
                                             Gestión de terceros
                                         </li>
-                                        <li class="text-muted p-2"
-                                            data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2">
+                                        <li class="text-muted p-2" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="2">
                                             <i class="icon-check me-1 fs-12px"></i>
                                             Monitoreo las 24 hrs.
                                         </li>
-                                        <li class="text-muted p-2" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0">
+                                        <li class="text-muted p-2" data-bs-target="#carouselExampleIndicators"
+                                            data-bs-slide-to="0">
                                             <i class="icon-check me-1 fs-12px"></i>
                                             Reportes mensuales
                                         </li>
@@ -200,20 +209,14 @@
                             </div>
                         </div>
                     </div>
-                    <!-- <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="prev">
-                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                        <span class="visually-hidden">Previous</span>
-                    </button> -->
-                    <button class="carousel-control-next d-none d-sm-block" type="button" data-bs-target="#carouselExampleFade"
-                        data-bs-slide="next">
+                    <button class="carousel-control-next d-none d-sm-block" type="button"
+                        data-bs-target="#carouselExampleFade" data-bs-slide="next">
                         <span class="carousel-control-next-icon" aria-hidden="true"></span>
                         <span class="visually-hidden">Next</span>
                     </button>
                 </div>
             </section>
             <!-- End Benefits -->
-
 
             <!-------------------------------------------------  -->
             <!-- Start services -->
@@ -223,7 +226,7 @@
                 <a class="btn-rounded-default text-decoration-none" href="#information">
                     <div class="icon-arrow-down"></div>
                 </a>
-                
+
                 <!-- <a class="btn-rounded btn-default text-decoration-none" href="#information">
                     <div class="icon-arrow-down"></div>
                 </a> -->

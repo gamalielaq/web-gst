@@ -155,17 +155,22 @@ var swiper = new Swiper('.swiper-services', {
 
 // --------------------------------------------------------------------
 
+// header
 $(window).scroll(function(){
+  
   if ($(this).scrollTop() > 200) {
      $('#topbar').addClass('topbar-fixed');
-     console.log('Sei Qui');
   } else {
      $('#topbar').removeClass('topbar-fixed');
   }
 });
 
-
-//loader
+// loader
 window.onload = function() {
-  $('#loader').fadeOut();
+    setInterval(() => {
+      $('#loader').fadeOut(); 
+    }, 500);
 }
+
+
+
