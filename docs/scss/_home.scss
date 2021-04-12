@@ -12,7 +12,17 @@
 
 }
 
-.users {
+.section-users {
+    
+    width: 100%;
+    background-image: url('../../assets/img/bg-users.svg');
+    background-size: cover;
+
+    .section-card {
+        position: relative;
+        bottom: 70px;
+    }
+
     .text-number {
         font-size: 2.5rem;
         font-family: 'DM Sans', sans-serif;
@@ -34,10 +44,23 @@
     }
 
     .carousel-inner {
+
+        .carousel-title {
+            position: absolute;
+            z-index: 1;
+            width: 100%;
+            h2 {
+                width: 230px;
+                @media screen and(min-width: 768px) {
+                    width: 240px;
+                }
+            }
+        }
        
         .carousel-img {
             width: 100%;
             height: 390px;
+            object-fit: cover;
         }
 
         .carousel-item {

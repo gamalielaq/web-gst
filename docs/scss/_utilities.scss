@@ -248,7 +248,16 @@ $sides: (x ,y, all, top, bottom, left, right);
     //margins
 
     .m-mr-md-6 {
-        padding-right: 6rem;
+        padding-right: 6rem !important;
+    }
+
+    .m-mt-md-3 {
+        margin-top: 3rem !important;
+    }
+
+    // heights
+    .h-md-100 {
+        height: 100% !important;
     }
 }
 @media screen and(min-width: 992px ) {

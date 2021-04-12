@@ -3,10 +3,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
@@ -36,10 +36,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
@@ -165,12 +165,44 @@ $(window).scroll(function(){
   }
 });
 
+
 // loader
 window.onload = function() {
+
     setInterval(() => {
-      $('#loader').fadeOut(); 
+      $('#loader').fadeOut();
+      $('#slider').addClass('slider-animation');
+      $('.mi-animated').addClass('card-animation');
+      $('.animation-text').addClass('op-1');
+      
     }, 500);
 }
 
+//animations
+var animation = document.querySelectorAll(".animation");
+
+function mostrarScroll() {
+  var scrollTop = document.documentElement.scrollTop;
+  for (var index = 0; index < animation.length; index++) {
+    const altAnimado = animation[index].offsetTop;
+    if(altAnimado - 300 < scrollTop) {
+
+      animation[index].style.opacity = 1;
+      animation[index].classList.add("mostrarArriba");
+      console.log('add anmation');
+      
+    }
+  }
+}
+
+window.addEventListener('scroll', mostrarScroll);
 
 
+// $(window).scroll(function(){
+//   let scrollTop = document.documentElement.scrollTop;
+//   if ($(this).scrollTop() < scrollTop) {
+//      $('#topbar').addClass('topbar-fixed');
+//   } else {
+//      $('#topbar').removeClass('topbar-fixed');
+//   }
+// });

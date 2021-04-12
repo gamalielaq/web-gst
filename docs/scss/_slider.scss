@@ -13,8 +13,6 @@
     }
 
     .slide-img-banner {
-        // background-image: url('../../assets/img/banner-about-us.png');
-        // background-repeat: no-repeat;
         position: absolute;
         width: 100%;
         z-index: -1;
@@ -27,8 +25,6 @@
 
     //aout use
     .slide-img-about-use {
-        // background-image: url('../../assets/img/banner-about-us.png');
-        // background-repeat: no-repeat;
         position: absolute;
         width: 100%;
         z-index: -1;
@@ -79,10 +75,8 @@
 }
 .slider.slide-img {
     background-image: url('../../assets/img/banner-3.png');
-    // position: absolute;
     width: 100%;
     z-index: -1;
-    // height: 365px;
 }
 
 .carousel-caption {

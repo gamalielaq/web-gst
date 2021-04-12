@@ -88,14 +88,14 @@
             <!-------------------------------------------------  -->
             <!-- Start slider -->
             <!-------------------------------------------------  -->
-            <section class="slider">
-                <div class="carousel slide" id="sliderHead">
+            <section class="slider" id="slider">
+                <div class="carousel slide" id="sliderHead" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" data-bs-interval="4000">
                             <img class="slider-image-home" src="../assets/img/slide-1.png" class="d-block w-100"
                                 alt="...">
                             <div class="carousel-caption d-flex align-items-center justify-content-center flex-column">
-                                <h1 class="mb-5">Lo mejor en seguridad y salud</h1>
+                                <h1 class="mb-5 animation-text">Lo mejor en seguridad y salud</h1>
                                 <p class="mb-5">Somos el Mejor aliado para tu empresa</p>
                                 <button class="btn btn-warning d-flex align-items-center pe-2">
                                     ACCEDER AHORA
@@ -103,7 +103,7 @@
                                 </button>
                             </div>
                         </div>
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="4000">
                             <img class="slider-image-home" src="../assets/img/slide-2.png" class="d-block w-100"
                                 alt="...">
                             <div class="carousel-caption d-flex align-items-center justify-content-center flex-column">
@@ -132,90 +132,98 @@
             <!-- End slider -->
             <!-------------------------------------------------  -->
 
-            <section class="section-card">
-                <div class="gst-container py-0">
-                    <div class="row">
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-3">
-                            <div class="card rounded-5 border-0 h-100">
-                                <div
-                                    class="card-body flex-column flex-md-row d-flex justify-content-center align-items-center p-4">
-                                    <i class="icon-search icon me-md-4"></i>
+            
+
+            
+
+            <section class="section-users">
+
+                <div class="section-card mi-animated">
+                    <div class="gst-container py-0">
+                        <div class="row">
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                                <div class="card rounded-5 border-0 h-100 animated-c-1">
                                     <div
-                                        class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                                        <h5 class="card-title fw-bold">Monitoreo</h5>
-                                        <p class="card-text text-muted text-center text-md-start">
-                                            Monitorea fácilmente con nuestros sistemas de seguridad.
-                                        </p>
+                                        class="card-body flex-column flex-md-row d-flex justify-content-center align-items-center p-4">
+                                        <i class="icon-search icon me-md-4"></i>
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                            <h5 class="card-title fw-bold">Monitoreo</h5>
+                                            <p class="card-text text-muted text-center text-md-start">
+                                                Monitorea fácilmente con nuestros sistemas de seguridad.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-3">
-                            <div class="card rounded-5 border-0 h-100">
-                                <div
-                                    class="card-body flex-column flex-md-row d-flex justify-content-center align-items-center p-4">
-                                    <i class="icon-security icon me-4"></i>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                                <div class="card rounded-5 border-0 h-100 animated-c-2">
                                     <div
-                                        class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                                        <h5 class="card-title fw-bold">Seguridad</h5>
-                                        <p class="card-text text-muted">
-                                            Brindamos seguridad para tu empresa.
-                                        </p>
+                                        class="card-body flex-column flex-md-row d-flex justify-content-center align-items-center p-4">
+                                        <i class="icon-security icon me-4"></i>
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                            <h5 class="card-title fw-bold">Seguridad</h5>
+                                            <p class="card-text text-muted">
+                                                Brindamos seguridad para tu empresa.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-3">
-                            <div class="card rounded-5 border-0 h-100">
-                                <div
-                                    class="card-body flex-column flex-md-row d-flex justify-content-center align-items-center p-4">
-                                    <i class="icon-work-experience icon me-4"></i>
+                            <div class="col-12 col-md-6 col-lg-4 col-xl-4 mb-3">
+                                <div class="card rounded-5 border-0 h-100 animated-c-3">
                                     <div
-                                        class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
-                                        <h5 class="card-title fw-bold">Experiencia</h5>
-                                        <p class="card-text text-muted">
-                                            Nuestra experiencia será tu mejor aliado.
-                                        </p>
+                                        class="card-body flex-column flex-md-row d-flex justify-content-center align-items-center p-4">
+                                        <i class="icon-work-experience icon me-4"></i>
+                                        <div
+                                            class="d-flex flex-column justify-content-center align-items-center align-items-md-start">
+                                            <h5 class="card-title fw-bold">Experiencia</h5>
+                                            <p class="card-text text-muted">
+                                                Nuestra experiencia será tu mejor aliado.
+                                            </p>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
 
-            <section class="users gst-container p-py-8">
-                <div class="row">
-                    <div class="col">
-                        <div class="d-flex flex-column align-items-center mb-4">
-                            <span class="text-number fw-bold">
-                                <a class="text-orange text-decoration-none">+</a>
-                                <a class="text-info text-decoration-none">1,000</a>
-                            </span>
-                            <p class="fw-500 fs-6 text-center">USUARIOS DIARIOS</p>
-                            <p class="fs-6 text-muted text-center">Es un hecho establecido hace demasiado tiempo que un
-                                lector.</p>
+                <div class="gst-container p-pb-6">
+                    <div class="row">
+                        <div class="col">
+                            <div class="d-flex flex-column align-items-center mb-4 animation">
+                                <span class="text-number fw-bold">
+                                    <a class="text-orange text-decoration-none">+</a>
+                                    <a class="text-info text-decoration-none">1,000</a>
+                                </span>
+                                <p class="fw-500 fs-6 text-center">USUARIOS DIARIOS</p>
+                                <p class="fs-6 text-muted text-center">Es un hecho establecido hace demasiado tiempo que un
+                                    lector.</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column align-items-center mb-4 mb-md-0">
+                                <img class="mb-5" src="../assets/img/+180.png" alt="">
+                                <p class="text-description fw-bold text-center m-0">
+                                    EMPRESAS BENEFICIARIAS DEL SISTEMA
+                                </p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="d-flex flex-column align-items-center">
+                                <span class="text-number fw-bold">
+                                    <a class="text-orange text-decoration-none">+ </a><a
+                                        class="text-info text-decoration-none">100, 0000</a>
+                                </span>
+                                <p class="fw-500 fs-6 text-center">TRABAJADORES GESTIONADOS</p>
+                                <p class="fs-6 text-muted text-center">Es un hecho establecido hace demasiado tiempo que un
+                                    lector.</p>
+                            </div>
                         </div>
                     </div>
-                    <div class="col">
-                        <div class="d-flex flex-column align-items-center mb-4 mb-md-0">
-                            <img class="mb-5" src="../assets/img/+180.png" alt="">
-                            <p class="text-description fw-bold text-center m-0">
-                                EMPRESAS BENEFICIARIAS DEL SISTEMA
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col">
-                        <div class="d-flex flex-column align-items-center">
-                            <span class="text-number fw-bold">
-                                <a class="text-orange text-decoration-none">+ </a><a
-                                    class="text-info text-decoration-none">100, 0000</a>
-                            </span>
-                            <p class="fw-500 fs-6 text-center">TRABAJADORES GESTIONADOS</p>
-                            <p class="fs-6 text-muted text-center">Es un hecho establecido hace demasiado tiempo que un
-                                lector.</p>
-                        </div>
-                    </div>
+    
                 </div>
 
             </section>
@@ -377,14 +385,17 @@
                             aria-label="Slide 2"></button>
                     </div>
                     <div class="carousel-inner">
+                        
+                        <div class="d-flex justify-content-center carousel-title">
+                            <h2 class="mt-lg-4 text-center text-white m-mt-4">
+                                Trabajamos con los mejores
+                            </h2>
+                        </div>
 
-                        <div class="carousel-item active">
+                        <div class="carousel-item active" data-bs-interval="3000">
                             <img class="carousel-img" src="../assets/img/banner-1.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption">
-                                <div class="d-flex justify-content-center">
-                                    <h2 class="m-mb-5 mt-lg-4 text-center">Trabajamos con los mejores</h2>
-                                </div>
-                                <div class="row w-lg-100">
+                                <div class="row w-lg-100 h-md-100 m-mt-7 m-mt-md-3">
                                     <div class="col-6 col-md-3 d-flex align-items-center justify-content-center mb-4">
                                         <img src="../assets/img/mi-banco.svg" class="d-block" alt="Mi Banco">
                                     </div>
@@ -401,13 +412,13 @@
                             </div>
                         </div>
 
-                        <div class="carousel-item">
+                        <div class="carousel-item" data-bs-interval="3000">
                             <img class="carousel-img" src="../assets/img/banner-1.png" class="d-block w-100" alt="...">
                             <div class="carousel-caption">
-                                <div class="d-flex justify-content-center">
+                                <!-- <div class="d-flex justify-content-center">
                                     <h2 class="m-mb-5 mt-lg-4 text-center">Trabajamos con los mejores</h2>
-                                </div>
-                                <div class="row w-lg-100">
+                                </div> -->
+                                <div class="row w-lg-100 h-md-100 m-mt-7 m-mt-md-3">
                                     <div class="col-6 col-md-3 d-flex align-items-center justify-content-center mb-4">
                                         <img src="../assets/img/clients/01.svg" class="d-block" alt="Mi Banco">
                                     </div>
@@ -673,14 +684,9 @@
     </div>
 
 
-    <!-- <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-    <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script src="../assets/bootstrap/dist/js/bootstrap.min.js"></script>
-    <script src="js/scripts.js"></script> -->
-
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
     <script src="../assets/libs/swiper/swiper-bundle.min.js"></script>
-    <script src="../assets/bootstrap/dist/js/bootstrap.min.js"></script>
+    <!-- <script src="../assets/bootstrap/dist/js/bootstrap.min.js"></script> -->
     <script src="js/scripts.js"></script>
 </body>
 
