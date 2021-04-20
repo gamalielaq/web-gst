@@ -82,7 +82,10 @@ $sides: (x ,y, all, top, bottom, left, right);
 // }
 
 .fw-500 {
-    font-weight: 500;
+    font-weight: 500 !important;
+}
+.fw-200 {
+    font-weight: 200 !important;
 }
 .rounded-4 {
     border-radius: 0.4rem !important;
@@ -133,6 +136,29 @@ $sides: (x ,y, all, top, bottom, left, right);
 }
 .fs-12px {
     font-size: 12px;
+}
+.fs-13px {
+    font-size: 13px;
+}
+.fs-14px {
+    font-size: 14px;
+}
+.fs-15px {
+    font-size: 15px;
+}
+.fs-16px {
+    font-size: 16px;
+}
+.fs-17px {
+    font-size: 18px;
+}
+
+.fs-25px {
+    font-size: 25px;
+}
+
+.fs-i-lg {
+    font-size: 50px;
 }
 
 
@@ -240,6 +266,10 @@ $sides: (x ,y, all, top, bottom, left, right);
         padding: 5rem !important;
     }
 
+    .p-px-md-4 {
+        padding-right: 4rem;
+        padding-left: 4rem;
+    }
     .p-px-md-7 {
         padding-right: 7rem;
         padding-left: 7rem;
@@ -406,4 +436,8 @@ $sides: (x ,y, all, top, bottom, left, right);
 //Colors
 .text-gray {
     color: #6c757d9e; 
+}
+
+.op-8 {
+    opacity: 0.8 !important;
 }

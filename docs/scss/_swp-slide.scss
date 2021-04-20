@@ -33,7 +33,7 @@
 
 .btn-next, .btn-prev {
     position: absolute;
-    top: calc((100% - 50%) - 24px);
+    top: calc((100% - 50%) - 12px);
     margin-top: calc(-1 * var(--swiper-navigation-size)/ 2);
     z-index: 10;
     cursor: pointer;
@@ -53,9 +53,9 @@
 
 }
 .btn-prev {
-    left: 0;
+    left: -25px;
 }   
 .btn-next {
-    right: 0;
+    right: -25px;
     left: auto;
 }

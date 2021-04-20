@@ -8,12 +8,12 @@
         background-repeat: no-repeat;
         height: 500px;
         @media screen and(min-width: 769px){    
-            height: 650px;
+            height: 700px;
         }
     }
 
     .slide-img-banner {
-        position: absolute;
+        // position: absolute;
         width: 100%;
         z-index: -1;
         
@@ -36,7 +36,7 @@
     }
 
     .slide-content {
-        padding-top: 8.9rem;
+        padding-top: 12rem;
     }
     .slide-content.content-img-slider {
         min-height: 365px;
@@ -51,12 +51,13 @@
         .carousel-caption {
 
             h1 {
-                
+                letter-spacing: 2px;
+                width: 98%;
                 @media screen and(min-width: 720px){
 
-                    font-size: 60px;
-                    max-width: 555px;
-                    line-height: 58px;    
+                    font-size: 55px;
+                    // max-width: 660px;
+                    line-height: 75px;    
 
                 }
                 
@@ -75,6 +76,7 @@
 }
 .slider.slide-img {
     background-image: url('../../assets/img/banner-3.png');
+    background-repeat: round;
     width: 100%;
     z-index: -1;
 }

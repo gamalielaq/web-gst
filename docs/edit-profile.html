@@ -45,23 +45,20 @@
                             <div class="btn-group m-mr-3">
                                 <button class="btn btn-transparent btn-sm dropdown-toggle" type="button"
                                     data-bs-toggle="dropdown" aria-expanded="false">
-                                    <img style="width: 20px; margin-bottom: 2px;" src="../assets/img/flag/PE.svg"
-                                        alt=""><span class="ms-2">PER</span>
+                                    <img src="../assets/img/es.svg" alt=""><span class="ms-2">ESP</span>
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item text-info" href="#">
-                                            <img style="width: 20px;" src="../assets/img/flag/PE.svg" alt=""><span
-                                                class="ms-2">ESP</span>
+                                            <img src="../assets/img/es.svg" alt=""><span class="ms-2">ESP</span>
                                         </a></li>
                                     <li>
                                         <a class="dropdown-item text-info" href="#">
-                                            <img style="width: 20px;" src="../assets/img/flag/ES.svg" alt=""><span
-                                                class="ms-2">PER</span>
+                                            <img src="../assets/img/es.svg" alt=""><span class="ms-2">PER</span>
                                         </a>
                                     </li>
                                 </ul>
                             </div>
-                            <a class="btn btn-outline-default" href="login.html">Salir</a>
+                            <a class="btn btn-outline-default" href="login.html">Ingresar</a>
                         </form>
                 </div>
             </div>
@@ -118,31 +115,39 @@
                         </div>
                         <div class="col-12 col-md-4 col-xl-8 mb-3">
                             <div class="card rounded-5 border-0 h-100">
-                                <div class="card-body p-4">
-                                    <h1 class="card-title fw-bold mb-4">Mis servicios</h1>
-                                    <div class="alert alert-danger d-flex justify-content-center border-0" role="alert">
-                                        <i class="icon-alert"></i> Tienes <strong class="ms-2">01 servicio</strong> por
-                                        expirar.
-                                    </div>
-                                    <div class="row">
-                                        <div class="col-12 col-md-6">
-                                            <div class="card rounded-5 border-0 bg-gst-gray">
-                                                <div class="card-body d-flex flex-column align-items-center p-4">
-                                                    <img class="mb-4" src="../assets/img/logo.png" alt="">
-                                                    <p class="text-muted">Fecha de expiración:</p>
-                                                    <span class="mb-4">
-                                                        <a class="text-info text-decoration-none">12/06/20</a> a las
-                                                        <a class="text-info text-decoration-none">12:00 p.m.</a>
-                                                    </span>
-                                                    <button type="button" class="btn btn-outline-info"
-                                                        data-bs-toggle="modal" data-bs-target="#suscriptionModal"
-                                                        data-bs-whatever="@mdo">
-                                                        <span class="fw-500">Renovar ahora</span>
-                                                    </button>
-                                                </div>
-                                            </div>
+                                <div class="card-body form-edit-profile p-5">
+                                    <h1 class="card-title fw-bold mb-4">Editar Perfil</h1>
+                                    <div class="mb-3 d-flex p-3 bg-gst-gray rounded-2">
+                                        <label class="col-sm-3 col-form-label">Nombre comercial:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control">
                                         </div>
                                     </div>
+                                    <div class="mb-3 d-flex p-3 bg-gst-gray rounded-2">
+                                        <label class="col-sm-3 col-form-label">Razón Social:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="mb-3 d-flex p-3 bg-gst-gray rounded-2">
+                                        <label class="col-sm-3 col-form-label">R.U.C.:</label>
+                                        <div class="col-sm-9">
+                                            <input type="text" class="form-control">
+                                        </div>
+                                    </div>
+                                    <div class="d-flex align-items-center justify-content-center flex-column">
+                                        <a href="profile.html">
+                                            <button type="button" class="btn btn-info text-white" data-bs-toggle="modal"
+                                                data-bs-target="#suscriptionModal" data-bs-whatever="@mdo">
+                                                <span class="fw-500">Guardar Cambios</span>
+                                            </button>
+                                        </a>
+                                        <br>
+
+                                        <a class="link-dark fw-500" href="profile.html">Volver atrás</a>
+                                    </div>
+
+
                                 </div>
                             </div>
                         </div>

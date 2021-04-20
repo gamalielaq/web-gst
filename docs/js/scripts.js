@@ -98,7 +98,6 @@ var swiper = new Swiper('.swiper-services', {
   });
 
 
-
   // swiper-contract-service
   var swiper = new Swiper('.swiper-contract-service', {
     slidesPerView: 1,
@@ -131,6 +130,40 @@ var swiper = new Swiper('.swiper-services', {
       },
     }
   });
+
+  // swiper-services-detail
+  var swiper = new Swiper('.swiper-services-detail', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    // autoplay: {
+    //     delay: 3000,
+    //     disableOnInteraction: false,
+    // },
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+      1025: {
+        slidesPerView: 4,
+        spaceBetween: 10,
+      },
+    }
+  });
+
 
 // ------------------------------------------
 
@@ -206,3 +239,7 @@ window.addEventListener('scroll', mostrarScroll);
 //      $('#topbar').removeClass('topbar-fixed');
 //   }
 // });
+
+
+//---------
+

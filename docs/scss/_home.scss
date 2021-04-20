@@ -2,16 +2,27 @@
 
     [data-bs-target] {
        border-radius: 50%;
-       border: 2px solid var(--bs-orange); 
        background-color: transparent;
+    }
+}
+
+.carousel-indicators.orange { 
+    [data-bs-target] {
+       border: 2px solid var(--bs-orange); 
     }
     
     .active {
         background-color: var(--bs-orange);
     }
-
 }
-
+.carousel-indicators.info { 
+    [data-bs-target] { 
+        border: 2px solid var(--bs-info); 
+    }
+    .active {
+        background-color: var(--bs-info);
+    }
+}
 .section-users {
     
     width: 100%;
