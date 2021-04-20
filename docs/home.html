@@ -62,13 +62,13 @@
                                 </button>
                                 <ul class="dropdown-menu">
                                     <li><a class="dropdown-item text-info" href="#">
-                                        <img style="width: 20px;" src="../assets/img/flag/PE.svg" alt=""><span class="ms-2">ESP</span>
-                                    </a></li>
-                                <li>
-                                    <a class="dropdown-item text-info" href="#">
-                                        <img style="width: 20px;" src="../assets/img/flag/ES.svg" alt=""><span class="ms-2">PER</span>
-                                    </a>
-                                </li>
+                                            <img style="width: 20px;" src="../assets/img/flag/PE.svg" alt=""><span class="ms-2">ESP</span>
+                                        </a></li>
+                                    <li>
+                                        <a class="dropdown-item text-info" href="#">
+                                            <img style="width: 20px;" src="../assets/img/flag/ES.svg" alt=""><span class="ms-2">PER</span>
+                                        </a>
+                                    </li>
                                 </ul>
                             </div>
                             <a class="btn btn-outline-default" href="login.html">Ingresar</a>
@@ -92,7 +92,7 @@
                 <div class="carousel slide" id="sliderHead" data-bs-ride="carousel">
                     <div class="carousel-inner">
                         <div class="carousel-item active" data-bs-interval="4000">
-                            <img class="slider-image-home" src="../assets/img/slide-1.png" class="d-block w-100"
+                            <img class="banner-img-home" src="../assets/img/slide-1.png" class="d-block w-100"
                                 alt="...">
                             <div class="carousel-caption d-flex align-items-center justify-content-center flex-column">
                                 <h1 class="mb-5 animation-text">Servicios Integrales para la Seguridad y Salud en el Trabajo (SST)</h1>
@@ -104,11 +104,11 @@
                             </div>
                         </div>
                         <div class="carousel-item" data-bs-interval="4000">
-                            <img class="slider-image-home" src="../assets/img/slide-2.png" class="d-block w-100"
+                            <img class="banner-img-home" src="../assets/img/slide-2.png" class="d-block w-100"
                                 alt="...">
                             <div class="carousel-caption d-flex align-items-center justify-content-center flex-column">
                                 <h1 class="mb-5">Digitalizamos la gestión de Seguridad y Salud en el Trabajo (SST)</h1>
-                                <p class="mb-5">ACCEDER AHORA</p>
+                                <p class="mb-5">Automatizamos todas las funciones operativas y transaccionales.</p>
                                 <button class="btn btn-warning d-flex align-items-center pe-2">
                                     QUIERO SASBER MAS
                                     <img class="ms-4" src="../assets/img/play.svg" alt="...">
@@ -190,31 +190,34 @@
                 <div class="gst-container p-pb-6">
                     <div class="row">
                         <div class="col">
-                            <div class="d-flex flex-column align-items-center mb-4">
+                            <div class="d-flex flex-column align-items-center mb-4 pt-3">
                                 <span class="text-number fw-bold">
                                     <a class="text-orange text-decoration-none">+</a>
                                     <a class="text-info text-decoration-none">1,000</a>
                                 </span>
-                                <p class="fw-500 fs-6 text-center">USUARIOS DIARIOS</p>
+                                <p class="fw-bold fs-6 text-center">USUARIOS DIARIOS</p>
                                 <p class="fs-6 text-muted text-center">Es un hecho establecido hace demasiado tiempo que un
                                     lector.</p>
                             </div>
                         </div>
                         <div class="col">
                             <div class="d-flex flex-column align-items-center mb-4 mb-md-0">
-                                <img class="mb-5" src="../assets/img/+180.png" alt="">
+                                <span class="text-number fw-bold">
+                                    <a class="text-orange text-decoration-none lh-1 fs-130px">+</a>
+                                    <a class="text-info text-decoration-none lh-1 fs-130px">180</a>
+                                </span>
                                 <p class="text-description fw-bold text-center m-0">
                                     EMPRESAS BENEFICIARIAS DEL SISTEMA
                                 </p>
                             </div>
                         </div>
                         <div class="col">
-                            <div class="d-flex flex-column align-items-center">
+                            <div class="d-flex flex-column align-items-center pt-3">
                                 <span class="text-number fw-bold">
                                     <a class="text-orange text-decoration-none">+ </a><a
                                         class="text-info text-decoration-none">100, 0000</a>
                                 </span>
-                                <p class="fw-500 fs-6 text-center">TRABAJADORES GESTIONADOS</p>
+                                <p class="fw-bold fs-6 text-center">TRABAJADORES GESTIONADOS</p>
                                 <p class="fs-6 text-muted text-center">Es un hecho establecido hace demasiado tiempo que un
                                     lector.</p>
                             </div>
@@ -233,7 +236,7 @@
                 <div class="gst-container-swp">
                     <div class="d-flex flex-column align-items-center justify-content-center mb-5">
                         <p class="text-info fw-bold fs-6">Te presentamos</p>
-                        <h2 class="fw-bold">Nuestros servicios</h2>
+                        <span class="fw-bold fs-1">Nuestros servicios</span>
                     </div>
                     <div class="position-relative">
                         <div class="swiper-services swiper-container">
@@ -391,9 +394,9 @@
                     <div class="carousel-inner">
                         
                         <div class="d-flex justify-content-center carousel-title">
-                            <h2 class="mt-lg-4 text-center text-white m-mt-4">
+                            <span class="mt-lg-4 text-center text-white m-mt-4 fs-1">
                                 Trabajamos con los mejores
-                            </h2>
+                            </span>
                         </div>
 
                         <div class="carousel-item active" data-bs-interval="3000">
@@ -461,95 +464,97 @@
             <!-------------------------------------------------  -->
             <!-- Start Reviews -->
             <!-------------------------------------------------  -->
-            <section class="section-review gst-container bg-gst-gray p-pb-4" id="reviews">
-                <div class="d-flex flex-column align-items-center justify-content-center mb-5">
-                    <p class="text-info fw-bold fs-6">Reseñas</p>
-                    <h2 class="fw-bold text-center">Nuestros clientes dicen</h2>
-                </div>
-                <div class="swiper-review swiper-container p-pb-3">
-                    <div class="swiper-wrapper">
-                        <div class="swiper-slide pt-4">
-                            <i class="icon-quotation-mark text-orange fs-1"></i>
-                            <div class="card rounded-5 border-0 mb-3">
-                                <div class="card-body position-relative p-py-2 p-p-md-3">
-                                    <p class="card-text text-center text-muted mb-4">
-                                        Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
-                                        establecido hace demasiado tiempo que un lector.
-                                    </p>
-                                    <div class="card-separator position-absolute"></div>
-                                    <div class="d-flex align-items-center justify-content-center p-pt-4">
-                                        <img class="avatar rounded-circle" src="../assets/img/avatar-1.png">
-                                        <div class="ms-3">
-                                            <label class="d-block fw-500">ERIKA DÍAZ</label>
-                                            <label class="d-block text-muted">ERIKA DÍAZ</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide pt-4">
-                            <i class="icon-quotation-mark text-orange fs-1"></i>
-                            <div class="card rounded-5 border-0 mb-3">
-                                <div class="card-body position-relative p-py-2 p-p-md-3">
-                                    <p class="card-text text-center text-muted mb-4">
-                                        Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
-                                        establecido hace demasiado tiempo que un lector.
-                                    </p>
-                                    <div class="card-separator position-absolute"></div>
-                                    <div class="d-flex align-items-center justify-content-center p-pt-4">
-                                        <img class="avatar rounded-circle" src="../assets/img/avatar-2.png">
-                                        <div class="ms-3">
-                                            <label class="d-block fw-500">kELVIN MORALES</label>
-                                            <label class="d-block text-muted">GERENTE</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide pt-4">
-                            <i class="icon-quotation-mark text-orange fs-1"></i>
-                            <div class="card rounded-5 border-0 mb-3">
-                                <div class="card-body position-relative p-py-2 p-p-md-3">
-                                    <p class="card-text text-center text-muted mb-4">
-                                        Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
-                                        establecido hace demasiado tiempo que un lector.
-                                    </p>
-                                    <div class="card-separator position-absolute"></div>
-                                    <div class="d-flex align-items-center justify-content-center p-pt-4">
-                                        <img class="avatar rounded-circle" src="../assets/img/avatar-1.png">
-                                        <div class="ms-3">
-                                            <label class="d-block fw-500">kELVIN MORALES</label>
-                                            <label class="d-block text-muted">GERENTE</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="swiper-slide pt-4">
-                            <i class="icon-quotation-mark text-orange fs-1"></i>
-                            <div class="card rounded-5 border-0 mb-3">
-                                <div class="card-body position-relative p-py-2 p-p-md-3">
-                                    <p class="card-text text-center text-muted mb-4">
-                                        Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
-                                        establecido hace demasiado tiempo que un lector.
-                                    </p>
-                                    <div class="card-separator position-absolute"></div>
-                                    <div class="d-flex align-items-center justify-content-center p-pt-4">
-                                        <img class="avatar rounded-circle" src="../assets/img/avatar-1.png">
-                                        <div class="ms-3">
-                                            <label class="d-block fw-500">JAVIER VILLALOBOS</label>
-                                            <label class="d-block text-muted">GERENTE</label>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+            <section class="section-review bg-gst-gray p-pb-4" id="reviews">
+                <div class="gst-container">
+                    <div class="d-flex flex-column align-items-center justify-content-center mb-5">
+                        <p class="text-info fw-bold fs-6">Reseñas</p>
+                        <h2 class="fw-bold text-center">Nuestros clientes dicen</h2>
                     </div>
-
-
-                    <div class="swiper-pagination"></div>
-                    <div class="btn-prev icon-arrow-left"></div>
-                    <div class="btn-next icon-arrow-rigth"></div>
+                    <div class="position-relative">
+                        <div class="swiper-review swiper-container p-pb-3">
+                            <div class="swiper-wrapper">
+                                <div class="swiper-slide pt-4">
+                                    <i class="icon-quotation-mark text-orange fs-1"></i>
+                                    <div class="card rounded-5 border-0 mb-3">
+                                        <div class="card-body position-relative p-py-2 p-p-md-3">
+                                            <p class="card-text text-center text-muted mb-4">
+                                                Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
+                                                establecido hace demasiado tiempo que un lector.
+                                            </p>
+                                            <div class="card-separator position-absolute"></div>
+                                            <div class="d-flex align-items-center justify-content-center p-pt-4">
+                                                <img class="avatar rounded-circle" src="../assets/img/avatar-1.png">
+                                                <div class="ms-3">
+                                                    <label class="d-block fw-500">ERIKA DÍAZ</label>
+                                                    <label class="d-block text-muted">ERIKA DÍAZ</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide pt-4">
+                                    <i class="icon-quotation-mark text-orange fs-1"></i>
+                                    <div class="card rounded-5 border-0 mb-3">
+                                        <div class="card-body position-relative p-py-2 p-p-md-3">
+                                            <p class="card-text text-center text-muted mb-4">
+                                                Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
+                                                establecido hace demasiado tiempo que un lector.
+                                            </p>
+                                            <div class="card-separator position-absolute"></div>
+                                            <div class="d-flex align-items-center justify-content-center p-pt-4">
+                                                <img class="avatar rounded-circle" src="../assets/img/avatar-2.png">
+                                                <div class="ms-3">
+                                                    <label class="d-block fw-500">kELVIN MORALES</label>
+                                                    <label class="d-block text-muted">GERENTE</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide pt-4">
+                                    <i class="icon-quotation-mark text-orange fs-1"></i>
+                                    <div class="card rounded-5 border-0 mb-3">
+                                        <div class="card-body position-relative p-py-2 p-p-md-3">
+                                            <p class="card-text text-center text-muted mb-4">
+                                                Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
+                                                establecido hace demasiado tiempo que un lector.
+                                            </p>
+                                            <div class="card-separator position-absolute"></div>
+                                            <div class="d-flex align-items-center justify-content-center p-pt-4">
+                                                <img class="avatar rounded-circle" src="../assets/img/avatar-1.png">
+                                                <div class="ms-3">
+                                                    <label class="d-block fw-500">kELVIN MORALES</label>
+                                                    <label class="d-block text-muted">GERENTE</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="swiper-slide pt-4">
+                                    <i class="icon-quotation-mark text-orange fs-1"></i>
+                                    <div class="card rounded-5 border-0 mb-3">
+                                        <div class="card-body position-relative p-py-2 p-p-md-3">
+                                            <p class="card-text text-center text-muted mb-4">
+                                                Es un hecho establecido hace demasiado tiempo que un lector. Es un hecho
+                                                establecido hace demasiado tiempo que un lector.
+                                            </p>
+                                            <div class="card-separator position-absolute"></div>
+                                            <div class="d-flex align-items-center justify-content-center p-pt-4">
+                                                <img class="avatar rounded-circle" src="../assets/img/avatar-1.png">
+                                                <div class="ms-3">
+                                                    <label class="d-block fw-500">JAVIER VILLALOBOS</label>
+                                                    <label class="d-block text-muted">GERENTE</label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="swiper-pagination"></div>
+                        </div>
+                        <div class="btn-prev icon-arrow-left"></div>
+                        <div class="btn-next icon-arrow-rigth"></div>
+                    </div>
                 </div>
             </section>
             <!-------------------------------------------------  -->

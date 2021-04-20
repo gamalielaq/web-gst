@@ -112,5 +112,8 @@ $modal-content-border-radius: 0.5rem;
 // Merge the maps
 $theme-colors: map-merge($theme-colors, $custom-colors);
 
+//
+$nav-pills-link-active-bg: $cyan;
+
 
 @import '../../assets/bootstrap/scss/bootstrap.scss'

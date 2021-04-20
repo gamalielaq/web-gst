@@ -42,6 +42,12 @@
         }
     }
 }
+
+.btn-outline-info {
+    &:hover {
+        color: var(--bs-white);
+    }
+}
 //End Buttonss
 
 .section .icon {
@@ -123,7 +129,7 @@
     
 }
 
-//seton section-benefits
+//section section-benefits
 .section-benefits {
     .bg-benefits {
         // background-image: url('../../assets/img/bg-benefits.png');
@@ -138,6 +144,24 @@
             cursor: pointer;
         }
     }
+}
+
+// section-detail-services
+.section-detail-services {
+    position: relative;
+    width: 80%;
+    background: white;
+    margin-left:auto;
+    margin-right:auto;
+    bottom: 30px;
+    @media screen and(min-width:768px ) {
+        bottom: 100px;
+    }
+}
+// section-ds-security
+.section-ds-security {
+    margin-left:auto;
+    margin-right:auto;
 }
 
 

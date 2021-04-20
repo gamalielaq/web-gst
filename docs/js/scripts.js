@@ -199,17 +199,7 @@ $(window).scroll(function(){
 });
 
 
-// loader
-window.onload = function() {
 
-    setInterval(() => {
-      $('#loader').fadeOut();
-      $('#slider').addClass('slider-animation');
-      $('.mi-animated').addClass('card-animation');
-      $('.animation-text').addClass('op-1');
-      
-    }, 500);
-}
 
 //animations
 var animation = document.querySelectorAll(".animation");
@@ -231,15 +221,55 @@ function mostrarScroll() {
 window.addEventListener('scroll', mostrarScroll);
 
 
-// $(window).scroll(function(){
-//   let scrollTop = document.documentElement.scrollTop;
-//   if ($(this).scrollTop() < scrollTop) {
-//      $('#topbar').addClass('topbar-fixed');
-//   } else {
-//      $('#topbar').removeClass('topbar-fixed');
-//   }
-// });
+//loader
+var progress = document.getElementById('progress');
+var loadTime = window.performance.timing.domContentLoadedEventEnd- window.performance.timing.navigationStart;
 
+let width = 100, perfData = window.performance.timing, 
+    EstimatedTime = -(perfData.loadEventEnd - perfData.navigationStart),
+    time = parseInt(((EstimatedTime/1000)%60)*100);
+   
+// Increment
+var start = 0, end = 100, durataion = time;
+animateValue(start, end, durataion);
+    
+function animateValue(start, end, duration) {
+  console.log(durataion);
+  let range = end - start,
+      current = start,
+      increment = end > start? 1 : -1,
+      stepTime = Math.abs(Math.floor(duration / range));
+    
+  let timer = setInterval(function() {
+    current += increment;
 
-//---------
+  if (current == 1) { 
+      progress.style.width = '1%';
+  }
+    
+    if (current == 10) { 
+        progress.style.width = '30%';
+    }
+    if (current == 50) {
+      progress.style.width = '70%';
+    }
+    if (current == 99) {
+      progress.style.width = '70%';
+    }
+    
+    if (current == end) {
+      clearInterval(timer);
+    }
+  }, stepTime);
+  
+}
 
+window.onload = function() {
+  setInterval(() => {
+    $('#loader').fadeOut();
+    $('#slider').addClass('slider-animation');
+    $('.mi-animated').addClass('card-animation');
+    $('.animation-text').addClass('op-1');
+    
+  }, time + 500);
+}

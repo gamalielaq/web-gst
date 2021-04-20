@@ -51,3 +51,24 @@
         }
     }
 }
+
+//modal contratar servicio
+.nav-pills  {
+    .nav-item button {
+        border-radius: 0;
+        padding: 0.7rem 1.5rem;
+        font-weight: 500;
+        &:hover {
+            color: var(--bs-black);
+        }
+    }
+    .nav-link.active {
+        color: var(--bs-white) !important;
+    }
+    .nav-item:first-child button {
+        border-radius: 5px 0px 0 5px;
+    }
+    .nav-item:last-child button {
+        border-radius: 0 5px 5px 0;
+    }
+}

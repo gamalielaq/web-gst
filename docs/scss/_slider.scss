@@ -1,15 +1,29 @@
 .slider { 
 
     //home
-    .slider-image-home {
+    .banner-img-home {
         width: 100%;
-        background-image: url('../../assets/img/banner-1.png');
+        // background-image: url('../../assets/img/banner-1.png');
         object-fit: cover;
         background-repeat: no-repeat;
         height: 500px;
         @media screen and(min-width: 769px){    
             height: 700px;
         }
+    }
+
+    // contact
+    .banner-img-contact { 
+        background-image: url('../../assets/img/banner-2.png');
+        background-repeat: round;
+        width: 100%;
+        z-index: -1;
+        // padding: 12rem 0 0rem 0;
+        height: 150px;
+        @media screen and(min-width: 769px){    
+            padding: 20rem 0 0rem 0;
+        }
+        
     }
 
     .slide-img-banner {
@@ -36,7 +50,13 @@
     }
 
     .slide-content {
-        padding-top: 12rem;
+        
+        padding-top: 5rem;
+
+        @media screen and(min-width: 768px){    
+            padding-top: 12rem;
+        }
+        
     }
     .slide-content.content-img-slider {
         min-height: 365px;
@@ -51,8 +71,13 @@
         .carousel-caption {
 
             h1 {
+
                 letter-spacing: 2px;
-                width: 98%;
+                width: 100%;
+                
+                @media screen and(max-width: 768px){ 
+                    font-size: 20px;
+                }
                 @media screen and(min-width: 720px){
 
                     font-size: 55px;
