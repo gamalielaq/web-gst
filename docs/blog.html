@@ -1,3 +1,6 @@
+<!DOCTYPE html>
+<html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,6 +12,7 @@
 </head>
 
 <body>
+
     <!-- loader -->
     <div class="loader-content" id="loader">
         <div class="loader-wareper">
@@ -18,18 +22,11 @@
           </div>
         </div>
      </div>
-     
-    <div id="particle-container">
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-        <div class="particle"></div>
-    </div> 
 
     <!-------------------------------------------------  -->
     <!-- topbar header -->
     <!-------------------------------------------------  -->
-    <header class="topbar topbar-fixed">
+    <header class="topbar" id="topbar">
         <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center d-sm-none w-100">
@@ -90,23 +87,26 @@
     <div class="main">
         <article class="warapepr">
 
-            <!-------------------------------------------------  -->
-            <!-- Start slider -->
-            <!-------------------------------------------------  -->
-            <section class="p-pt-6">
-                <div class="slide-img-about-use"></div>
+            <section class="slider mb-5">
+                <div class="comunity-banner"></div>
+                <div class="slide-content content gst-container d-flex flex-column align-items-center justify-content-center top-0 w-100">
+                    <div class="d-flex flex-column justify-content-center align-items-center">
+                        <h1 class="fw-bold text-white text-center">
+                            <p class="m-0"><span class="text-info">Compartimos </span><span> Información</span></p> 
+                            <span>valiosa para los profesionales de SST</span>
+                        </h1>
+                    </div>
+                </div>
             </section>
-            <!-------------------------------------------------  -->
-            <!-- Start slider -->
-            <!-------------------------------------------------  -->
 
+            
             <section class="container mb-5">
-                <div class="d-flex justify-content-center mb-5">
+                <!-- <div class="d-flex justify-content-center mb-5">
                     <h2 class="fw-bold text-center">
                         Tenemos atractivos
                         <p><span class="text-info">artículos</span><span> para ti</span></p> 
                     </h2>
-                </div>
+                </div> -->
                 <div class="row">
                     <div class="col-12 col-md-3 col-xl-3">
                         <div class="card border-0 m-mb-2 cursor-pointer">
@@ -259,6 +259,7 @@
                     </div>
                 </div>
             </section>
+
         </article>
     </div>
     <footer class="footer">
@@ -324,7 +325,8 @@
             </address>
         </div>
         <div class="footer-copyright d-flex justify-content-center bg-dark text-white p-3">
-            <p class="margin-0 text-center"><span>Copyright © 2021</span> GISSAT. <span>Todos los derechos reservados</span></p>
+            <p class="margin-0 text-center"><span>Copyright © 2021</span> GISSAT. <span>Todos los derechos
+                    reservados</span></p>
         </div>
     </footer>
 

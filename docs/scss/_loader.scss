@@ -1,7 +1,7 @@
   .loader-content {
 
     position: fixed;
-    background-image: url('../../assets/img/loader.svg');
+    // background-image: url('../../assets/img/loader.svg');
     background-repeat: no-repeat;
     background-size: cover;
     z-index: 9999;
@@ -28,9 +28,13 @@
       }
     }
     .progress {
+      
+      width: 20%;
+      @media screen and(min-width: 769px){    
         width: 7%;
-        height: 5px;
-        background:#acacac;
+      }
+      height: 5px;
+      background:#acacac;
     }
     .progress-bar {
         background: #ffff;

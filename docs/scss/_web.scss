@@ -139,11 +139,13 @@
         z-index: 0;
     }
 
-    .carousel-inner .carousel-list {
-        ul li {
-            cursor: pointer;
-        }
+    
+    .carousel-list li {
+        cursor: pointer;
     }
+    // .carousel-list li.active {
+    //     color: var(--bs-orange) !important;
+    // }
 }
 
 // section-detail-services
@@ -187,3 +189,11 @@
 hr {
     background:#9a9a9a;
 }
+
+//responsive
+@media screen and(max-width:768px ) { 
+    .carousel-control-prev, .carousel-control-next {
+        display: none;
+    }
+}
+
