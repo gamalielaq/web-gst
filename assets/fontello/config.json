@@ -551,6 +551,34 @@
       "search": [
         "automated"
       ]
+    },
+    {
+      "uid": "a43c340708c8e2e19819e64bce2f6331",
+      "css": "arrow-gst-rigth",
+      "code": 59432,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M794.2 572.6L156 977.7A94.8 94.8 0 0 1 0.2 905.1L0.2 94.8A94.9 94.9 0 0 1 156 22.2L794.2 427.3A96.1 96.1 0 0 1 794.2 572.6Z",
+        "width": 827
+      },
+      "search": [
+        "arrow-gst-rigth"
+      ]
+    },
+    {
+      "uid": "95360fa37701a6b40778fc24860abb16",
+      "css": "arrow-gst-left",
+      "code": 59431,
+      "src": "custom_icons",
+      "selected": true,
+      "svg": {
+        "path": "M33.1 572.6L671.1 977.7A94.8 94.8 0 0 0 827 905.1L827 94.8A94.9 94.9 0 0 0 671.1 22.2L33.1 427.3A96.1 96.1 0 0 0 33.1 572.6Z",
+        "width": 827
+      },
+      "search": [
+        "arrow-gst-left"
+      ]
     }
   ]
 }

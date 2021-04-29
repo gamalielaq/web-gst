@@ -52,7 +52,7 @@
 
 .section .icon {
     color: var(--bs-info);
-    font-size: $section-fs-icon;
+    font-size: 13px;
 }
 
 .gst-container {
@@ -197,7 +197,14 @@ hr {
 
 .section-card .icon {
     color    : var(--bs-info);
-    font-size: $section-fs-icon;
+    font-size: 13px;
+}
+
+select {
+    cursor: pointer;
+    option {
+        cursor: pointer;
+    }
 }
 
 //responsive

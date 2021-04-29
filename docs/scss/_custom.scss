@@ -100,7 +100,7 @@ $btn-close-bg: url('../../assets/img/close.svg');
 
 
 //variables gst
-$section-fs-icon: 3.5rem;
+// $section-fs-icon: 3.5rem;
 
 //alerts 
 $alert-background: #ED6A5E;
@@ -117,6 +117,7 @@ $nav-pills-link-active-bg: $cyan;
 
 //sizez
 $paragrap-font-zise: 13px;
+$form-label-font-size: 13px;
 
 body {
   font-family: "DM Sans, sans-serif";
@@ -127,6 +128,9 @@ p {
   font-family: var(--bs-font-poppins);
   font-size: 13px;
   font-weight: 300;
+}
+.col-form-label {
+  font-size: 13px !important;
 }
 
 @import '../../assets/bootstrap/scss/bootstrap.scss'

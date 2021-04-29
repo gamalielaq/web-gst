@@ -82,7 +82,7 @@
 @media screen and (min-width: 720px) {
   .slider .carousel-item .carousel-caption h1, .slider .carousel-item .carousel-caption .h1 {
     letter-spacing: 2px;
-    font-size: 55px;
+    font-size: 50px;
     line-height: 75px;
   }
 }
@@ -197,6 +197,10 @@ p {
   font-family: var(--bs-font-poppins);
   font-size: 13px;
   font-weight: 300;
+}
+
+.col-form-label {
+  font-size: 13px !important;
 }
 
 /*!
@@ -2322,6 +2326,7 @@ progress {
 }
 .form-label {
   margin-bottom: 0.5rem;
+  font-size: 0.8125rem;
 }
 
 .col-form-label {
@@ -11449,7 +11454,7 @@ textarea.form-control-lg {
 
 .section .icon {
   color: var(--bs-info);
-  font-size: 3.5rem;
+  font-size: 13px;
 }
 
 .gst-container {
@@ -11570,7 +11575,14 @@ hr {
 
 .section-card .icon {
   color: var(--bs-info);
-  font-size: 3.5rem;
+  font-size: 13px;
+}
+
+select {
+  cursor: pointer;
+}
+select option {
+  cursor: pointer;
 }
 
 @media screen and (max-width: 768px) {
@@ -11605,7 +11617,7 @@ hr {
 .topbar .navbar-collapse .navbar-nav .nav-item .nav-link {
   color: #eae3e3;
   font-family: var(--bs-font-poppins);
-  font-size: 13px;
+  font-size: 14px;
   font-weight: 300;
 }
 .topbar .navbar-collapse .navbar-nav .nav-item .nav-link:hover {
@@ -11732,7 +11744,7 @@ hr {
 }
 @media screen and (min-width: 768px) {
   .customers .carousel-inner .carousel-title span {
-    width: 310px;
+    width: 320px;
   }
 }
 .customers .carousel-inner .carousel-img {
@@ -11824,7 +11836,7 @@ hr {
 
 .gst-sweep:hover .gst-content-sweep {
   opacity: 1;
-  transition: 1.5s;
+  transition: 0.3s;
 }
 
 .hvr-sweep-to-top:before {
@@ -11873,8 +11885,18 @@ hr {
   transition: transform 0.6s ease-in-out;
   display: none;
 }
+
 .section-team-work .btn-next, .section-team-work .btn-prev {
   top: calc(100% - 63%);
+}
+
+.section-year-today .banner {
+  object-fit: cover;
+}
+@media screen and (max-width: 768px) {
+  .section-year-today .banner {
+    height: 428px;
+  }
 }
 
 .swiper-contract-service .card .card-body .price {
@@ -13169,71 +13191,71 @@ hr {
 }
 
 .fs-5px {
-  font-size: 5x;
+  font-size: 5px !important;
 }
 
 .fs-6px {
-  font-size: 6px;
+  font-size: 6px !important;
 }
 
 .fs-7px {
-  font-size: 7px;
+  font-size: 7px !important;
 }
 
 .fs-8px {
-  font-size: 8px;
+  font-size: 8px !important;
 }
 
 .fs-9px {
-  font-size: 9px;
+  font-size: 9px !important;
 }
 
 .fs-9px {
-  font-size: 9px;
+  font-size: 9px !important;
 }
 
 .fs-10px {
-  font-size: 10px;
+  font-size: 10px !important;
 }
 
 .fs-11px {
-  font-size: 11px;
+  font-size: 11px !important;
 }
 
 .fs-12px {
-  font-size: 12px;
+  font-size: 12px !important;
 }
 
 .fs-13px {
-  font-size: 13px;
+  font-size: 13px !important;
 }
 
 .fs-14px {
-  font-size: 14px;
+  font-size: 14px !important;
 }
 
 .fs-15px {
-  font-size: 15px;
+  font-size: 15px !important;
 }
 
 .fs-16px {
-  font-size: 16px;
+  font-size: 16px !important;
 }
 
 .fs-17px {
-  font-size: 18px;
+  font-size: 18px !important;
 }
 
 .fs-25px {
-  font-size: 25px;
+  font-size: 25px !important;
 }
 
 .fs-70px {
-  font-size: 70px;
+  font-size: 70px !important;
 }
 
 .fs-i-lg {
-  font-size: 50px;
+  font-size: 50px !important;
 }
 
 .w-50 {
