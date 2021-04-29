@@ -71,7 +71,7 @@
 
 //section section-benefits
 .section-benefits {
-  .carousel-list li.active {
+  .carousel-benefit-list li.active {
     animation: showTopB 0.5s;
     color: var(--bs-orange) !important;
     font-weight: bold;
@@ -98,6 +98,48 @@
     transform:translateY(0);
   }
 }
+//End section section-benefits
+
+
+.CreationGST-list .item.active {
+  //  color: var(--bs-info);
+   animation: showLeft500 1s;
+   opacity: 1;
+   z-index: 9999;
+   display: block;
+}
+
+.creation-list li {
+  padding: 0.5rem  1rem;  
+  transition: all 0.5s;
+  text-align: center;
+  font-size: 13.5px;
+  @media screen and(min-width:768px) {
+    min-width: 85px;
+    font-size: 1.5rem; 
+  }
+}
+.creation-list li.active {
+    transform: scale(1.7);
+
+  span {
+    color: var(--bs-info);
+    // transition: 0.5s;
+    // font-size: 30px !important;
+  }
+}
+
+@keyframes showLeft500 {
+  0% {
+    transform:translateX(700px);
+  }
+  100% {
+    transform:translateX(0);
+  }
+}
+
+
+//----------------
 
 
   @keyframes showTopButton {

@@ -60,9 +60,14 @@
 
     @media screen and(min-width:768px ) {
         padding: 4rem 2rem;
-        width: 88%;
+        width: 95%;
         margin-left:auto;
         margin-right:auto;
+    }
+}
+.gst-container.gst { 
+    @media screen and(min-width:768px ) {
+        width: 88%;
     }
 }
 
@@ -97,8 +102,6 @@
     .card {
         min-height: 290px;
         .card-body { 
-            // transition: 0.5s;
-            // transition: all 0.5s ease-in-out;
             position: relative;
             bottom: -18px;
             -webkit-transition: all 0.5s ease-in-out;
@@ -111,6 +114,10 @@
                 visibility: hidden;
                 transition: all 0.5s linear;
                 opacity: 0;
+            }
+
+            p {
+                opacity: 0.8;
             }
         }
         
@@ -132,15 +139,13 @@
 //section section-benefits
 .section-benefits {
     .bg-benefits {
-        // background-image: url('../../assets/img/bg-benefits.png');
         height: 660px;
         transition: 0.5s;
-        // opacity: 0.5s;
         z-index: 0;
     }
 
     
-    .carousel-list li {
+    .carousel-benefit-list li {
         cursor: pointer;
     }
     // .carousel-list li.active {
@@ -188,6 +193,11 @@
 
 hr {
     background:#9a9a9a;
+}
+
+.section-card .icon {
+    color    : var(--bs-info);
+    font-size: $section-fs-icon;
 }
 
 //responsive

@@ -79,6 +79,31 @@
     
 }
 
+//section-creation-gst
+
+.section-creation-gst {
+    .CreationGST-list {
+        // position: relative;
+        .item {
+            color: #6c757d;
+            // position: relative;
+            // float: left;
+            width: 100%;
+            margin-right: -100%;
+            // backface-visibility: hidden;
+            transition: transform 0.6s ease-in-out;
+            display: none;
+        }
+        .item.active {
+            // display: block;
+            // opacity: 0;
+            // visibility: hidden;
+        }
+    }
+}
+
+
+
 // -------------------------------------
 .section-team-work {
     .btn-next, .btn-prev {

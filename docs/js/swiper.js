@@ -3,10 +3,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
@@ -69,10 +69,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    autoplay: {
-      delay: 3000,
-      disableOnInteraction: false,
-    },
+    // autoplay: {
+    //   delay: 3000,
+    //   disableOnInteraction: false,
+    // },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
