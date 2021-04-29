@@ -44,8 +44,15 @@
 
     .comunity-banner {
         @extend %banner;
+        object-fit: cover;
         position: absolute;
         background-image: url('../../assets/img/banners/community-banner.png');
+        @media screen and(max-width: 768px){ 
+            height: 220px;
+        }
+        .slide-content {
+            padding-top: 5rem;
+        }
     }
 
     //about use
