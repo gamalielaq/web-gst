@@ -1,0 +1,98 @@
+.section-services {
+    .btn-rounded-default {
+        position: absolute;
+        left: calc((100% - 50%) - 1.5rem);
+        top: -23px
+    }
+    .card {
+        min-height: 290px;
+        .card-body { 
+            position: relative;
+            bottom: -18px;
+            -webkit-transition: all 0.5s ease-in-out;
+            -moz-transition: all 0.5s ease-in-out;
+            -o-transition: all 0.5s ease-in-out;
+            -ms-transition: all 0.5s ease-in-out;
+            transition: all 0.5s ease-in-out;
+            
+            .link-read-more { 
+                visibility: hidden;
+                transition: all 0.5s linear;
+                opacity: 0;
+            }
+
+            p {
+                opacity: 0.8;
+            }
+        }
+        
+        &:hover {
+            background: var(--bs-white) !important;
+            box-shadow: 0px 4px 80px #00000014;
+            .card-body { 
+                bottom: 10px;
+            }
+            .link-read-more {
+                visibility: visible;
+                opacity: 1;
+            }
+        }
+    }
+    
+}
+.section-services-2 {
+    .btn-rounded-default {
+        position: absolute;
+        left: calc((100% - 50%) - 1.5rem);
+        top: -23px
+    }
+    .card {
+        min-height: 250px;
+    }
+}
+
+//section section-benefits
+.section-benefits {
+    .bg-benefits {
+        height: 660px;
+        transition: 0.5s;
+        z-index: 0;
+    }    
+    .carousel-benefit-list li {
+        cursor: pointer;
+        font-size: 13px;
+    }
+}
+
+.accident-banner {
+    @media screen and(max-width:768px ) {
+        img {
+            height:200px;
+            object-fit: cover;
+        }
+    }
+}
+
+.arrow-1 {
+    position: absolute;
+    right: calc(100% - 50%);
+    top: -10%;
+    font-size: 30px;
+    color: var(--bs-orange);
+}
+.arrow-2:before {
+    position: absolute;
+    left: calc(24%);
+    top: -12%;
+    font-size: 30px;
+    transform: rotate(-135deg);
+    color: var(--bs-orange);
+}
+.arrow-3:before {
+    position: absolute;
+    right: calc(22%);
+    top: -27%;
+    font-size: 30px;
+    transform: rotate(135deg);
+    color: var(--bs-orange);
+}

@@ -164,7 +164,9 @@ $sides: (x ,y, all, top, bottom, left, right);
     font-size: 50px !important;
 }
 
-
+.w-35 {
+    width: 35% !important;
+}
 .w-50 {
     width: 50% !important;
 }
@@ -218,6 +220,9 @@ $sides: (x ,y, all, top, bottom, left, right);
 }
 
 @media screen and(min-width: 769px ) {
+    .w-md-35 {
+        width: 35% !important;
+    }
     .w-md-50 {
         width: 50% !important;
     }
@@ -291,6 +296,9 @@ $sides: (x ,y, all, top, bottom, left, right);
     }
     .m-mr-md-6 {
         margin-right: 6rem !important;
+    }
+    .m-mb-md-5 {
+        margin-bottom: 5rem !important;
     }
 
     
@@ -433,6 +441,9 @@ $sides: (x ,y, all, top, bottom, left, right);
 //roundeds
 .rounded-left-3 {
     border-radius: 0.3rem 0 0 0.3rem;
+}
+.rounded-7 {
+    border-radius: 1.5rem !important;
 }
 
 .position-top {

@@ -92,67 +92,6 @@
     }
 }
 
-//Services
-.section-services {
-    .btn-rounded-default {
-        position: absolute;
-        left: calc((100% - 50%) - 1.5rem);
-        top: -23px
-    }
-    .card {
-        min-height: 290px;
-        .card-body { 
-            position: relative;
-            bottom: -18px;
-            -webkit-transition: all 0.5s ease-in-out;
-            -moz-transition: all 0.5s ease-in-out;
-            -o-transition: all 0.5s ease-in-out;
-            -ms-transition: all 0.5s ease-in-out;
-            transition: all 0.5s ease-in-out;
-            
-            .link-read-more { 
-                visibility: hidden;
-                transition: all 0.5s linear;
-                opacity: 0;
-            }
-
-            p {
-                opacity: 0.8;
-            }
-        }
-        
-        &:hover {
-            background: var(--bs-white) !important;
-            box-shadow: 0px 4px 80px #00000014;
-            .card-body { 
-                bottom: 10px;
-            }
-            .link-read-more {
-                visibility: visible;
-                opacity: 1;
-            }
-        }
-    }
-    
-}
-
-//section section-benefits
-.section-benefits {
-    .bg-benefits {
-        height: 660px;
-        transition: 0.5s;
-        z-index: 0;
-    }
-
-    
-    .carousel-benefit-list li {
-        cursor: pointer;
-    }
-    // .carousel-list li.active {
-    //     color: var(--bs-orange) !important;
-    // }
-}
-
 // section-detail-services
 .section-detail-services {
     position: relative;
@@ -165,15 +104,14 @@
         bottom: 100px;
     }
 }
+
 // section-ds-security
 .section-ds-security {
     margin-left:auto;
     margin-right:auto;
 }
 
-
 //Modals
-
 .modal-body {
     .modal-icon {
         font-size: 4rem;
@@ -195,8 +133,8 @@ hr {
     background:#9a9a9a;
 }
 
-.section-card .icon {
-    color    : var(--bs-info);
+.icon {
+    color : var(--bs-info);
     font-size: 3rem;
 }
 
@@ -207,10 +145,24 @@ select {
     }
 }
 
+//icons 
+.i-movil::after {
+    content: url(/assets/img/icons/movil.svg);
+}
+.i-Inplant::after {
+    content: url(/assets/img/icons/Inplant.svg);
+}
+.i-whatsApp::after {
+    content: url(/assets/img/icons/whatsApp.svg);
+}
+.i-mail::after {
+    content: url(/assets/img/icons/mail.svg);
+}
+
+
 //responsive
 @media screen and(max-width:768px ) { 
     .carousel-control-prev, .carousel-control-next {
         display: none;
     }
 }
-

@@ -35,6 +35,12 @@
             height: 475px;
         }
     }
+    .slide-heith {
+        height: 350px;
+        @media screen and(min-width: 769px){    
+            height: 475px;
+        }
+    }
 
     .detail-blog-banner {
         @extend %banner;
