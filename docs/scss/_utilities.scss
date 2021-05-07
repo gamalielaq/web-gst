@@ -87,11 +87,19 @@ $sides: (x ,y, all, top, bottom, left, right);
 .fw-200 {
     font-weight: 200 !important;
 }
+.p-fw-500 {
+    p {
+        font-weight: 500 !important;
+    }
+}
 .rounded-4 {
     border-radius: 0.4rem !important;
 }
 .rounded-5 {
     border-radius: 0.5rem !important;
+}
+.rounded-1r {
+    border-radius: 1rem !important;
 }
 .rounded-t-5 {
     border-radius: 0.5rem 0.5rem 0 0 !important;
@@ -275,6 +283,9 @@ $sides: (x ,y, all, top, bottom, left, right);
     }
     .p-pt-md-12 {
         padding-top: 12rem !important;
+    }
+    .p-pt-md-8   {
+        padding-top: 8rem !important;
     }
     .p-px-md-1-5 {
         padding-right: 1.5rem;

@@ -11572,6 +11572,211 @@ select option {
   content: url(/assets/img/icons/mail.svg);
 }
 
+.i-check::after {
+  line-height: 0;
+  content: url(/assets/img/icons/check.svg);
+}
+
+.modal-body {
+  max-height: 80vh;
+  overflow: auto;
+}
+
+.tooltip {
+  display: inline-block;
+  position: relative;
+  border-bottom: 1px dotted #666;
+  text-align: left;
+  opacity: 1 !important;
+  border: 2px solid white;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 1;
+}
+.tooltip:hover {
+  border-color: var(--bs-info);
+}
+
+.tooltip .left {
+  min-width: 280px;
+  top: 50%;
+  right: 100%;
+  margin-right: 20px;
+  transform: translate(0, -50%);
+  padding: 10px 20px;
+  color: #FFFFFF;
+  background-color: var(--bs-info);
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.tooltip:hover .left {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .left i {
+  position: absolute;
+  top: 50%;
+  left: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.tooltip .left i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  background-color: var(--bs-info);
+}
+
+.tooltip .right {
+  min-width: 200px;
+  top: 50%;
+  left: 100%;
+  margin-left: 20px;
+  transform: translate(0, -50%);
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: var(--bs-info);
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.tooltip:hover .right {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .right i {
+  position: absolute;
+  top: 50%;
+  right: 100%;
+  margin-top: -12px;
+  width: 12px;
+  height: 24px;
+  overflow: hidden;
+}
+
+.tooltip .right i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 0;
+  top: 50%;
+  transform: translate(50%, -50%) rotate(-45deg);
+  background-color: var(--bs-info);
+}
+
+.tooltip .bottom {
+  min-width: 200px;
+  bottom: -30%;
+  left: 50%;
+  transform: translate(-50%, 0);
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: var(--bs-info);
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.tooltip:hover .bottom {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .bottom i {
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.tooltip .bottom i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, 50%) rotate(45deg);
+  background-color: var(--bs-info);
+}
+
+.tooltip .top {
+  min-width: 200px;
+  top: -20px;
+  left: 50%;
+  transform: translate(-50%, -100%);
+  padding: 10px 20px;
+  color: #ffffff;
+  background-color: var(--bs-info);
+  font-weight: normal;
+  font-size: 13px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 99999999;
+  box-sizing: border-box;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.8s;
+}
+
+.tooltip:hover .top {
+  visibility: visible;
+  opacity: 1;
+}
+
+.tooltip .top i {
+  position: absolute;
+  top: 100%;
+  left: 50%;
+  margin-left: -12px;
+  width: 24px;
+  height: 12px;
+  overflow: hidden;
+}
+
+.tooltip .top i::after {
+  content: "";
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  background-color: var(--bs-info);
+}
+
 @media screen and (max-width: 768px) {
   .carousel-control-prev, .carousel-control-next {
     display: none;
@@ -13270,12 +13475,20 @@ select option {
   font-weight: 200 !important;
 }
 
+.p-fw-500 p {
+  font-weight: 500 !important;
+}
+
 .rounded-4 {
   border-radius: 0.4rem !important;
 }
 
 .rounded-5 {
   border-radius: 0.5rem !important;
+}
+
+.rounded-1r {
+  border-radius: 1rem !important;
 }
 
 .rounded-t-5 {
@@ -13504,6 +13717,10 @@ select option {
 
   .p-pt-md-12 {
     padding-top: 12rem !important;
+  }
+
+  .p-pt-md-8 {
+    padding-top: 8rem !important;
   }
 
   .p-px-md-1-5 {
