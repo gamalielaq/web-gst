@@ -17,6 +17,13 @@
         padding: 1rem;
         border-radius: 0.5rem;
 
+        @media screen and (max-width: 768px) { 
+            .btn-outline-default { 
+                background-color: var(--bs-info);
+            }
+        }
+
+        
         .btn-outline-default {
             color: var(--bs-white);
 
@@ -25,7 +32,6 @@
             }
         }
 
-       
         .navbar-nav .nav-item .nav-link  {
 
             color: #000;

@@ -254,7 +254,7 @@ p {
   --bs-muted: #808080;
   --bs-blue: #004076;
   --bs-transparent: transparent;
-  --bs-font-sans-serif: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", "Liberation Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
+  --bs-font-sans-serif: "DM Sans", sans-serif;
   --bs-font-monospace: SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
   --bs-gradient: linear-gradient(180deg, rgba(255, 255, 255, 0.15), rgba(255, 255, 255, 0));
 }
@@ -11799,6 +11799,11 @@ select option {
   background: #ffff;
   padding: 1rem;
   border-radius: 0.5rem;
+}
+@media screen and (max-width: 768px) {
+  .topbar .navbar-collapse .btn-outline-default {
+    background-color: var(--bs-info);
+  }
 }
 .topbar .navbar-collapse .btn-outline-default {
   color: var(--bs-white);
