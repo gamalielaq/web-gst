@@ -49,7 +49,9 @@
     }
 }
 //End Buttonss
-
+ul li {
+    cursor: pointer;
+}
 .section .icon {
     color: var(--bs-info);
     font-size: 13px;

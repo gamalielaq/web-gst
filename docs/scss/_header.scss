@@ -78,7 +78,7 @@
 
 .topbar.topbar-fixed {
 
-    position: fixed;
+    position: sticky;
     background: var(--bs-white);
     transition: 0.3s;
     box-shadow: 0px 2px 20px #00000014;

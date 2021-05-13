@@ -1,4 +1,3 @@
-
 // header
 $(window).scroll(function () {
     if ($(this).scrollTop() > 200) {
@@ -68,20 +67,19 @@ function animateValue(start, end, duration) {
     }, stepTime);
 
 }
-// $(document.body).css('overflow','hidden');
+
 window.onload = function () {
-    let loader = $('#loader');
+    let loader = $('#loader');    
     setInterval(() => {
         loader.css('opacity', '0.2');
         loader.fadeOut();
-        $(document.body).css('overflow','auto');
+        $(document.body).removeAttr("style");
         $('#slider').addClass('slider-animation');
         $('.mi-animated').addClass('card-animation');
         $('.animation-text').addClass('op-1');
 
     }, time + 300);
 }
-
 
 function preloadImageLoader() {
     var img = new Image();

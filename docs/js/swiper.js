@@ -3,10 +3,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
@@ -36,10 +36,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
@@ -69,10 +69,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    // autoplay: {
-    //   delay: 3000,
-    //   disableOnInteraction: false,
-    // },
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
@@ -136,10 +136,10 @@ var swiper = new Swiper('.swiper-services', {
     slidesPerView: 1,
     spaceBetween: 10,
     loop: true,
-    // autoplay: {
-    //     delay: 3000,
-    //     disableOnInteraction: false,
-    // },
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
     navigation: {
       nextEl: '.btn-next',
       prevEl: '.btn-prev',
@@ -163,27 +163,4 @@ var swiper = new Swiper('.swiper-services', {
       },
     }
   });
-  
-  // ------------------------------------------
-
-// var swiper = new Swiper('.swiper-team', {
-//     slidesPerView: 4,
-//     spaceBetween: 30,
-//     loop: true,
-//     zoom: true,
-//     autoplay: {
-//         delay: 2500,
-//         disableOnInteraction: false,
-//     },
-//     navigation: {
-//         nextEl: '.icon-button-next',
-//         prevEl: '.icon-button-prev',
-//     },
-//     pagination: {
-//         el: '.swiper-pagination',
-//         clickable: true,
-//       }
-// });
-
-// --------------------------------------------------------------------
 

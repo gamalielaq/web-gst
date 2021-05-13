@@ -207,7 +207,6 @@
 
 body {
   font-family: "DM Sans, sans-serif";
-  overflow: hidden;
 }
 
 p {
@@ -11469,6 +11468,10 @@ textarea.form-control-lg {
   color: var(--bs-white);
 }
 
+ul li {
+  cursor: pointer;
+}
+
 .section .icon {
   color: var(--bs-info);
   font-size: 13px;
@@ -11849,7 +11852,7 @@ select option {
 }
 
 .topbar.topbar-fixed {
-  position: fixed;
+  position: sticky;
   background: var(--bs-white);
   transition: 0.3s;
   box-shadow: 0px 2px 20px #00000014;
@@ -12236,7 +12239,26 @@ select option {
 }
 .section-benefits .carousel-benefit-list li {
   cursor: pointer;
-  font-size: 13px;
+  color: #6c757d;
+  font-size: 14px;
+}
+.section-benefits .carousel-benefit-list li:hover {
+  color: var(--bs-orange);
+  transition: 0.2s;
+}
+.section-benefits .carousel_benefits .carousel-inner .carousel-item {
+  position: relative;
+}
+.section-benefits .carousel_benefits .carousel-inner .carousel-item .carousel-footer {
+  position: absolute;
+  bottom: 40px;
+  height: 110px;
+  width: 85%;
+  padding: 1rem;
+  background: linear-gradient(90deg, #31c5f0 0%, rgba(9, 9, 121, 0) 100%, rgba(0, 212, 255, 0) 100%);
+  color: #ffff;
+  display: flex;
+  align-items: center;
 }
 
 @media screen and (max-width: 768px) {
@@ -12270,6 +12292,14 @@ select option {
   font-size: 30px;
   transform: rotate(135deg);
   color: var(--bs-orange);
+}
+
+.list-services {
+  transition: max-height 1s ease-out;
+}
+
+.border-top-dotted {
+  border-top: 3px dotted #939393;
 }
 
 .nav-default li .nav-link {
@@ -12508,7 +12538,7 @@ select option {
   animation: showTopB 0.5s;
   color: var(--bs-orange) !important;
   font-weight: bold;
-  font-size: 18px;
+  font-size: 15px;
 }
 
 .actB {
@@ -13965,6 +13995,10 @@ select option {
 
 .op-9 {
   opacity: 0.9 !important;
+}
+
+.modal-open {
+  padding-right: 17px;
 }
 
 /*# sourceMappingURL=style.css.map */

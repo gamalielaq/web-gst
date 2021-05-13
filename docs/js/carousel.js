@@ -30,44 +30,47 @@ function activeBenefit(element, clicked) {
         $(element).addClass('active');
     }
 }
-
 benefits.click(function () {
     activeBenefit($(this), true)
 });
 
-
-
-
-//Carousel Benefits --> file service.html
-
-var creationGSTlist = $(".CreationGST-list .item");
-var creationList = $(".creation-list li");
+//Carousel Creation GST --> file service.html
+var creationGSTlist = $(".CreationGST-list .item"), creationList = $(".creation-list li");
 var carouselCreationGST = document.getElementById('carouselCreationGST')
+var clicked = false;
+
+creationList.click(function () {
+    let carousel = bootstrap.Carousel.getInstance(carouselCreationGST);
+    clicked = true; 
+    activeElements($(this).index());
+    carousel.to($(this).index());
+});
 
 if (carouselCreationGST != null) {
+    
     carouselCreationGST.addEventListener('slide.bs.carousel', function () {
         var carousel = bootstrap.Carousel.getInstance(carouselCreationGST);
         var items = carousel._items;
         for (let i = 0; i < items.length; i++) {
             element = $(items[i]).attr('class').split(' ');
             var item = getActive(element);
-            if (item) {
+            if (item && !clicked) {
                 let active = i + 1;
                 active != items.length ? activeElements(active) : activeElements(0);
             }
         }
+        clicked = false;
     })
 }
+
+
+
 
 function activeElements(index) {
     creationGSTlist.removeClass("active"); creationList.removeClass("active");
     $(creationGSTlist[index]).addClass('active');
     $(creationList[index]).addClass('active');
 }
-
-// creationGSTlist.click(function () {
-//     activeBenefit($(this), true)
-// });
 
 function getActive(array) {
     let response;
@@ -80,3 +83,26 @@ function getActive(array) {
     });
     return response;
 }
+
+
+//-- Todos lo servicios-  services.html--------------------
+var listServices = $(".list-services .item");
+$("#btnMoreServices").click(function () {
+    activeServices('all');
+});
+function activeServices(active) {
+    for (let i = 0; i < listServices.length; i++) {
+        const element = listServices[i];
+        if (active != 'all') {
+            if(i > active - 1) {
+                $(listServices[i]).css('display','none');
+                $(listServices[i]).css('opacity','0');
+            }
+        }else {
+            $(listServices[i]).css('opacity','1');
+            $(listServices[i]).css('display','block');
+        }
+        
+    }
+}
+activeServices(8);

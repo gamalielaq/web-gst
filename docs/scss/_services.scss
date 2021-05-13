@@ -60,7 +60,29 @@
     }    
     .carousel-benefit-list li {
         cursor: pointer;
-        font-size: 13px;
+        color: #6c757d;
+        font-size: 14px;
+        &:hover {
+            color: var(--bs-orange);
+            transition: 0.2s;
+        }
+    }
+    .carousel_benefits {
+        .carousel-inner .carousel-item {
+            position: relative;
+            .carousel-footer{
+                position: absolute;
+                bottom: 40px;
+                height: 110px;
+                width: 85%;
+                padding: 1rem;
+                // background: red;
+                background: linear-gradient(90deg, rgba(49,197,240,1) 0%, rgba(9,9,121,0) 100%, rgba(0,212,255,0) 100%);
+                color: #ffff;
+                display: flex;
+                align-items: center;
+            }
+        }
     }
 }
 
@@ -95,4 +117,10 @@
     font-size: 30px;
     transform: rotate(135deg);
     color: var(--bs-orange);
+}
+.list-services {
+    transition: max-height 1s ease-out;
+}
+.border-top-dotted {
+    border-top: 3px dotted #939393;
 }
