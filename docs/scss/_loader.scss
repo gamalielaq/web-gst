@@ -18,12 +18,26 @@
       justify-content: center;
 
       .loader-icon {
-        width: 50px;
-        height: 55px;
-        margin-bottom: 1rem;
-        background-image: url('../../assets/img/logo-white.svg');
+        z-index: 1;
+        margin-bottom: 1.3rem;
+      }
+      .loader-icon::after {
+        content: url('../../assets/img/casco.svg');
+        display: flex;
         animation: icon-load 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
         opacity: 1;
+      }
+      
+      .loader-icon-rout::after {
+        content: url('../../assets/img/rueda.svg');
+        display: flex;
+        animation: icon-rout 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
+      }
+      .loader-icon-rout {
+        animation: lds-dual-ring 1.2s linear infinite;
+        line-height: 0;
+        position: absolute;
+        top: 46.5%;
       }
     }
     .progress {
@@ -58,9 +72,31 @@
   }
   100% {
     transform: scale(0.9);
-    opacity: 0.1;
+  }
+}
+@keyframes icon-rout {
+  0% {
+    transform: scale(0.95);
+    opacity: 1;
+  }
+  33% {
+    transform: scale(1);
+  }
+  66% {
+    transform: scale(0.95);
+  }
+  100% {
+    transform: scale(0.9);
+    opacity: 0.3;
   }
 }
 
 
-
+@keyframes lds-dual-ring {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
