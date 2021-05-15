@@ -90,17 +90,28 @@
 }
 .slider .carousel-item .carousel-caption h1, .slider .carousel-item .carousel-caption .h1 {
   width: 100%;
+  font-size: 25px;
 }
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 576px) {
   .slider .carousel-item .carousel-caption h1, .slider .carousel-item .carousel-caption .h1 {
-    font-size: 20px;
+    font-size: 38px;
   }
 }
-@media screen and (min-width: 720px) {
+@media screen and (min-width: 768px) {
   .slider .carousel-item .carousel-caption h1, .slider .carousel-item .carousel-caption .h1 {
     letter-spacing: 2px;
     font-size: 50px;
+  }
+}
+@media screen and (min-width: 992px) {
+  .slider .carousel-item .carousel-caption h1, .slider .carousel-item .carousel-caption .h1 {
     line-height: 75px;
+  }
+}
+@media screen and (max-width: 576px) {
+  .slider .carousel-item .carousel-caption {
+    left: 10%;
+    right: 10%;
   }
 }
 .slider .carousel-item .carousel-caption button {
@@ -11803,7 +11814,7 @@ select option {
   padding: 1rem;
   border-radius: 0.5rem;
 }
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 992px) {
   .topbar .navbar-collapse .btn-outline-default {
     background-color: var(--bs-info);
   }
@@ -11820,7 +11831,7 @@ select option {
   font-size: 14px;
   font-weight: 300;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .topbar .navbar-collapse .navbar-nav .nav-item .nav-link {
     color: #eae3e3;
   }
@@ -11835,7 +11846,7 @@ select option {
 .topbar .navbar-collapse .dropdown-toggle span {
   color: #000;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
   .topbar .navbar-collapse {
     padding: 0;
     background: transparent;
@@ -14053,6 +14064,10 @@ select option {
 
 .modal-open {
   padding-right: 17px;
+}
+
+.object-fit-cover {
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */

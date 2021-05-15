@@ -502,3 +502,7 @@ $sides: (x ,y, all, top, bottom, left, right);
 .modal-open {
     padding-right: 17px;
 }
+
+.object-fit-cover {
+    object-fit: cover;
+}

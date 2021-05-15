@@ -30,6 +30,51 @@
     <!-------------------------------------------------  -->
     <header class="topbar" id="topbar">
         <nav class="navbar navbar-expand-lg">
+            <div class="container-fluid container-md">
+                <div class="d-flex justify-content-between align-items-center d-lg-none w-100 p-p-1">
+                    <div class="img-logo"></div>
+                    <button class="btn btn-outline-default d-sm-block px-3 py-1" type="button" data-bs-toggle="collapse"
+                        id="btnCollapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                        aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="bi bi-text-right"></i>
+                    </button>
+                </div>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <div class="img-logo d-none d-lg-block"></div>
+                    <a class="navbar-brand me-auto" href="#">
+                        <ul class="navbar-nav  mb-2 mb-lg-0 m-mr-6" style="visibility: hidden;">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex">
+                            <div class="btn-group m-mr-3">
+                                <button class="btn btn-transparent btn-sm dropdown-toggle" type="button"
+                                    data-bs-toggle="dropdown" aria-expanded="false">
+                                    <img style="width: 20px; margin-bottom: 2px;" src="../assets/img/flag/PE.svg"
+                                        alt=""><span class="ms-2">PER</span>
+                                </button>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item text-info" href="#">
+                                            <img style="width: 20px;" src="../assets/img/flag/PE.svg" alt=""><span
+                                                class="ms-2">ESP</span>
+                                        </a></li>
+                                    <li>
+                                        <a class="dropdown-item text-info" href="#">
+                                            <img style="width: 20px;" src="../assets/img/flag/ES.svg" alt=""><span
+                                                class="ms-2">PER</span>
+                                        </a>
+                                    </li>
+                                </ul>
+                            </div>
+                            <a class="btn btn-outline-default" href="login.html">Ingresar</a>
+                        </form>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <!-- <header class="topbar" id="topbar">
+        <nav class="navbar navbar-expand-lg">
             <div class="container">
                 <div class="d-flex justify-content-between align-items-center d-sm-none w-100">
                     <div class="img-logo"></div>
@@ -72,17 +117,16 @@
                 </div>
             </div>
         </nav>
-    </header>
+    </header> -->
     <!-------------------------------------------------  -->
     <!-- End header -->
     <!-------------------------------------------------  -->
 
     <div class="main">
-        <img class="w-100" src="../assets/img/banner-2.png" height="300px" alt="">
-        <article class="warapepr position-absolute top-0 w-100 m-mt-7">
-
+        <article class="warapepr    ">
             <section class="slider">
-                <div class="container p-pt-4 p-pb-4">
+                <img class="w-100 object-fit-cover position-absolute" src="../assets/img/banner-2.png" height="300px" alt="">
+                <div class="container p-pt-9 p-pb-4">
                     <div class="row">
                         <div class="col-12 col-md-4 col-xl-4 mb-3">
                             <div class="card card-profile rounded-5 border-0">
@@ -172,526 +216,526 @@
                     </div>
                 </div>
             </section>
-
-            <footer class="footer">
-                <div class="d-flex flex-column align-items-center justify-content-center footer-warapepr"
-                    style="background: #212F31; color: #FFFFFF;">
-                    <div class="navbar navbar-expand-lg mb-5">
-                        <div class="collapse navbar-collapse justify-content-center">
-                            <ul class="navbar-nav">
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Inicio</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Nosotros</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Servicios</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Membresía</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Comunidades</a>
-                                </li>
-                                <li class="nav-item">
-                                    <a class="nav-link" href="#">Contáctanos</a>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <address class="address text-center">
-                        <p>
-                            <span>
-                                <i class="icon-location me-2"></i>
-                                Urb. Santa Catalina, La Victoria. Lima, Perú
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <i class="icon-phone me-2"></i>
-                                (511) 942-780-170
-                            </span>
-                        </p>
-                        <p>
-                            <span>
-                                <i class="icon-email me-3"></i>
-                                contacto@gissat.com
-                            </span>
-                        </p>
-                        <div class="social-media">
-                            <a href="http://">
-                                <i class="icon-facebook"></i>
-                            </a>
-                            <a href="http://">
-                                <i class="icon-instagram"></i>
-                            </a>
-                            <a href="http://">
-                                <i class="icon-linkedin"></i>
-                            </a>
-                            <a href="http://">
-                                <i class="icon-youtube"></i>
-                            </a>
-                        </div>
-                    </address>
-                </div>
-                <div class="footer-copyright d-flex justify-content-center bg-dark text-white p-3">
-                    <p class="margin-0 text-center"><span>Copyright © 2021</span> GISSAT. <span>Todos los derechos
-                            reservados</span></p>
-                </div>
-            </footer>
-
-            <!-- Modal Suscription -->
-            <div class="modal fade" id="suscriptionModal" tabindex="-1" aria-labelledby="suscriptionModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content border-0">
-                        <button class="btn-close position-absolute m-3 right-0 fs-4" type="button"
-                            data-bs-dismiss="modal" aria-label="Close">
-                        </button>
-                        <div class="modal-header border-0">
-                            <h2 class="modal-title w-100 text-center mt-3" id="suscriptionModalLabel">Renovar
-                                suscripción
-                            </h2>
-                        </div>
-                        <div class="modal-body">
-                            <form>
-                                <div class="d-flex flex-column align-items-center">
-                                    <p class="text-muted">Estas renovando</p>
-                                    <h3 class="text-info">GISSAT</h3> <br>
-                                    <div class="d-flex justify-content-center mb-3 w-100 w-md-70">
-
-                                        <select class="form-select form-select-lg bg-gst-gray mb-3"
-                                            aria-label=".form-select-lg example">
-                                            <option value="1"> <strong class="text-info"> 01 MES</strong> S/. 2400
-                                            </option>
-                                            <option value="2">02 MES S/. 1800</option>
-                                        </select>
-                                        <!--  <div class="dropdown">
-                                            <button class="dropdown-toggle dropdown-input" type="button"
-                                                id="dropdownMenuButton1" data-bs-toggle="dropdown"
-                                                aria-expanded="false">
-                                                <span class="text-info">01 MES</span> <span class="text-muted">- S/.
-                                                    2400</span>
-                                            </button>
-                                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        <span class="text-info">01 MES</span> <span class="text-muted">-
-                                                            S/. 2400</span>
-                                                    </a>
-                                                </li>
-                                                <li>
-                                                    <a class="dropdown-item" href="#">
-                                                        <span class="text-info">02 MES</span> <span class="text-muted">-
-                                                            S/. 1800</span>
-                                                    </a>
-                                                </li>
-                                            </ul>
-                                        </div> -->
-                                    </div> <br>
-                                    <div class="mb-4">
-                                        <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
-                                            data-bs-target="#purchaseMadeModal" data-bs-whatever="@mdo">
-                                            <span class="fw-500">Ir a pagar</span>
-                                        </button>
-                                    </div>
-                                </div>
-                            </form>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal purchase made-->
-            <div class="modal fade" id="purchaseMadeModal" tabindex="-1" aria-labelledby="purchaseMadeModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content border-0">
-                        <div class="modal-header border-0">
-                            <button class="btn-close fs-4" type="button" data-bs-dismiss="modal" aria-label="Close">
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="d-flex flex-column align-items-center">
-                                <i class="modal-icon icon-success mb-2"></i>
-                                <h2 class="modal-title w-100 text-center fs-2 mt-3 mb-4" id="exampleModalLabel">
-                                    Compra Realizada
-                                </h2>
-                                <p class="text-muted text-center mb-5">
-                                    Tu compra ha sido realizada con éxito.
-                                </p>
-                                <button class="btn btn-info text-white mb-4" data-bs-toggle="modal"
-                                    data-bs-target="#purchaseMadeNotModal" data-bs-whatever="@mdo">Ir a mis
-                                    servicios</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Modal purchase not made-->
-            <div class="modal fade" id="purchaseMadeNotModal" tabindex="-1" aria-labelledby="purchaseMadeNotModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-lg modal-dialog-centered">
-                    <div class="modal-content border-0">
-                        <div class="modal-header border-0">
-                            <button class="btn-close fs-4" type="button" data-bs-dismiss="modal" aria-label="Close">
-                            </button>
-                        </div>
-                        <div class="modal-body">
-                            <div class="d-flex flex-column align-items-center">
-                                <i class="modal-icon icon-close mb-2"></i>
-                                <h2 class="modal-title w-100 text-center fs-2 mt-3 mb-4" id="exampleModalLabel">
-                                    Compra no realizada
-                                </h2>
-                                <p class="text-muted text-center mb-5">
-                                    Tu compra no pudo ser procesada. Por favor, intenta en unos minutos.
-                                </p>
-                                <button class="btn btn-info text-white mb-4">Volver a inicio</button>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <!--Modal contract service -->
-            <div class="modal fade" id="contractServiceModal" tabindex="-1" aria-labelledby="contractServiceModalLabel"
-                aria-hidden="true">
-                <div class="modal-dialog modal-xl modal-dialog-centered">
-                    <div class="modal-content border-0">
-                        <button class="btn-close position-absolute m-3 right-0 fs-4" type="button"
-                            data-bs-dismiss="modal" aria-label="Close">
-                        </button>
-                        <div class="modal-header border-0">
-                            <h1 class="modal-title fw-bold w-100 text-center mt-3" id="contractServiceModalLabel">
-                                Contratar
-                                servicio</h1>
-                        </div>
-                        <div class="modal-body">
-                            <section class="section-services position-relative bg-white p-4 p-px-4">
-
-                                <ul class="nav nav-pills btn-group justify-content-center mb-5" id="pills-tab"
-                                    role="tablist">
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link active" id="pill-month-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pill-month" type="button" role="tab"
-                                            aria-controls="pill-month" aria-selected="true">MENSUAL</button>
-                                    </li>
-                                    <li class="nav-item" role="presentation">
-                                        <button class="nav-link" id="pill-year-tab" data-bs-toggle="pill"
-                                            data-bs-target="#pill-year" type="button" role="tab"
-                                            aria-controls="pill-year" aria-selected="false">ANUAL</button>
-                                    </li>
-                                </ul>
-
-                                <div class="tab-content" id="pills-tabContent">
-                                    <div class="tab-pane fade show active" id="pill-month" role="tabpanel"
-                                        aria-labelledby="pill-month-tab">
-
-                                        <div id="carouselContractService" class="carousel slide"
-                                            data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-4">
-                                                            <div class="card rounded-5 mb-3">
-                                                                <div class="card-body p-4">
-                                                                    <h6
-                                                                        class="card-title fw-bold text-info text-center mb-3">
-                                                                        GISSAT
-                                                                    </h6>
-                                                                    <div
-                                                                        class="d-flex justify-content-center align-items-center price pb-3 mb-1">
-                                                                        <span class="fw-500 fs-3">S/1600</span>
-                                                                        <span class="text-muted">/mes</span>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="d-flex flex-column mb-3">
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check me-1 text-orange fs-12px"></i>
-                                                                            Acceso ilimitado
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Soporte las 24 hrs
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Capacitación gratuita
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Máximo 1,000 colaboradores
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-center mb-3">
-                                                                        <button class="btn btn-info text-white">Escoger
-                                                                            plan</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-4">
-                                                            <div class="card rounded-5 mb-3">
-                                                                <div class="card-body p-4">
-                                                                    <h6
-                                                                        class="card-title fw-bold text-info text-center mb-3">
-                                                                        Inspecciones de seguridad
-                                                                        plan
-                                                                    </h6>
-                                                                    <div
-                                                                        class="d-flex justify-content-center align-items-center price pb-3 mb-2">
-                                                                        <span class="fw-500 fs-3">S/1600</span><span
-                                                                            class="text-muted">/mes</span>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="d-flex flex-column mb-3">
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check me-1 text-orange fs-12px"></i>
-                                                                            Acceso ilimitado
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Soporte las 24 hrs
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Capacitación gratuita
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Máximo 1,000 colaboradores
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-center mb-3">
-                                                                        <button class="btn btn-info text-white">Escoger
-                                                                            plan</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-4">
-                                                            <div class="card rounded-5 mb-3">
-                                                                <div class="card-body p-4">
-                                                                    <h6
-                                                                        class="card-title fw-bold text-info text-center mb-3">
-                                                                        Capacitaciones
-                                                                    </h6>
-                                                                    <div
-                                                                        class="d-flex justify-content-center align-items-center price pb-3 mb-2">
-                                                                        <span class="fw-500 fs-3">S/1600</span><span
-                                                                            class="text-muted">/mes</span>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="d-flex flex-column mb-3">
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check me-1 text-orange fs-12px"></i>
-                                                                            Acceso ilimitado
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Soporte las 24 hrs
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Capacitación gratuita
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Máximo 1,000 colaboradores
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-center mb-3">
-                                                                        <button class="btn btn-info text-white">Escoger
-                                                                            plan</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" style="left: -70px;"
-                                                data-bs-target="#carouselContractService" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" style="right: -70px;"
-                                                data-bs-target="#carouselContractService" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                    </div>
-
-                                    <div class="tab-pane fade show" id="pill-year" role="tabpanel"
-                                        aria-labelledby="pill-year-tab">
-                                        <div id="pill-year" class="carousel slide" data-bs-ride="carousel">
-                                            <div class="carousel-inner">
-                                                <div class="carousel-item active">
-                                                    <div class="row">
-                                                        <div class="col-12 col-md-4">
-                                                            <div class="card rounded-5 mb-3">
-                                                                <div class="card-body p-4">
-                                                                    <h6
-                                                                        class="card-title fw-bold text-info text-center mb-3">
-                                                                        GISSAT
-                                                                    </h6>
-                                                                    <div
-                                                                        class="d-flex justify-content-center align-items-center price pb-3 mb-1">
-                                                                        <span class="fw-500 fs-3">S/1600</span>
-                                                                        <span class="text-muted">/mes</span>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="d-flex flex-column mb-3">
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check me-1 text-orange fs-12px"></i>
-                                                                            Acceso ilimitado
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Soporte las 24 hrs
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Capacitación gratuita
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Máximo 1,000 colaboradores
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-center mb-3">
-                                                                        <button class="btn btn-info text-white">Escoger
-                                                                            plan</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-4">
-                                                            <div class="card rounded-5 mb-3">
-                                                                <div class="card-body p-4">
-                                                                    <h6
-                                                                        class="card-title fw-bold text-info text-center mb-3">
-                                                                        Inspecciones de seguridad
-                                                                        plan
-                                                                    </h6>
-                                                                    <div
-                                                                        class="d-flex justify-content-center align-items-center price pb-3 mb-2">
-                                                                        <span class="fw-500 fs-3">S/1600</span><span
-                                                                            class="text-muted">/mes</span>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="d-flex flex-column mb-3">
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check me-1 text-orange fs-12px"></i>
-                                                                            Acceso ilimitado
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Soporte las 24 hrs
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Capacitación gratuita
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Máximo 1,000 colaboradores
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-center mb-3">
-                                                                        <button class="btn btn-info text-white">Escoger
-                                                                            plan</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="col-12 col-md-4">
-                                                            <div class="card rounded-5 mb-3">
-                                                                <div class="card-body p-4">
-                                                                    <h6
-                                                                        class="card-title fw-bold text-info text-center mb-3">
-                                                                        Capacitaciones
-                                                                    </h6>
-                                                                    <div
-                                                                        class="d-flex justify-content-center align-items-center price pb-3 mb-2">
-                                                                        <span class="fw-500 fs-3">S/1600</span><span
-                                                                            class="text-muted">/mes</span>
-                                                                    </div>
-                                                                    <hr>
-                                                                    <div class="d-flex flex-column mb-3">
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check me-1 text-orange fs-12px"></i>
-                                                                            Acceso ilimitado
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Soporte las 24 hrs
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Capacitación gratuita
-                                                                        </span>
-                                                                        <span class="p-2 text-muted">
-                                                                            <i
-                                                                                class="icon-check text-orange me-1 fs-12px"></i>
-                                                                            Máximo 1,000 colaboradores
-                                                                        </span>
-                                                                    </div>
-                                                                    <div class="d-flex justify-content-center mb-3">
-                                                                        <button class="btn btn-info text-white">Escoger
-                                                                            plan</button>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                            <button class="carousel-control-prev" type="button" style="left: -70px;"
-                                                data-bs-target="#carouselContractService" data-bs-slide="prev">
-                                                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Previous</span>
-                                            </button>
-                                            <button class="carousel-control-next" type="button" style="right: -70px;"
-                                                data-bs-target="#carouselContractService" data-bs-slide="next">
-                                                <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                                                <span class="visually-hidden">Next</span>
-                                            </button>
-                                        </div>
-                                    </div>
-                                </div>
-                            </section>
-                        </div>
-                    </div>
-                </div>
-            </div>
         </article>
+    </div>
+
+    <footer class="footer">
+        <div class="d-flex flex-column align-items-center justify-content-center footer-warapepr"
+            style="background: #212F31; color: #FFFFFF;">
+            <div class="navbar navbar-expand-lg mb-5">
+                <div class="collapse navbar-collapse justify-content-center">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Nosotros</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Servicios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Membresía</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Comunidades</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contáctanos</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <address class="address text-center">
+                <p>
+                    <span>
+                        <i class="icon-location me-2"></i>
+                        Urb. Santa Catalina, La Victoria. Lima, Perú
+                    </span>
+                </p>
+                <p>
+                    <span>
+                        <i class="icon-phone me-2"></i>
+                        (511) 942-780-170
+                    </span>
+                </p>
+                <p>
+                    <span>
+                        <i class="icon-email me-3"></i>
+                        contacto@gissat.com
+                    </span>
+                </p>
+                <div class="social-media">
+                    <a href="http://">
+                        <i class="icon-facebook"></i>
+                    </a>
+                    <a href="http://">
+                        <i class="icon-instagram"></i>
+                    </a>
+                    <a href="http://">
+                        <i class="icon-linkedin"></i>
+                    </a>
+                    <a href="http://">
+                        <i class="icon-youtube"></i>
+                    </a>
+                </div>
+            </address>
+        </div>
+        <div class="footer-copyright d-flex justify-content-center bg-dark text-white p-3">
+            <p class="margin-0 text-center"><span>Copyright © 2021</span> GISSAT. <span>Todos los derechos
+                    reservados</span></p>
+        </div>
+    </footer>
+
+    <!-- Modal Suscription -->
+    <div class="modal fade" id="suscriptionModal" tabindex="-1" aria-labelledby="suscriptionModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0">
+                <button class="btn-close position-absolute m-3 right-0 fs-4" type="button"
+                    data-bs-dismiss="modal" aria-label="Close">
+                </button>
+                <div class="modal-header border-0">
+                    <h2 class="modal-title w-100 text-center mt-3" id="suscriptionModalLabel">Renovar
+                        suscripción
+                    </h2>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="d-flex flex-column align-items-center">
+                            <p class="text-muted">Estas renovando</p>
+                            <h3 class="text-info">GISSAT</h3> <br>
+                            <div class="d-flex justify-content-center mb-3 w-100 w-md-70">
+
+                                <select class="form-select form-select-lg bg-gst-gray mb-3"
+                                    aria-label=".form-select-lg example">
+                                    <option value="1"> <strong class="text-info"> 01 MES</strong> S/. 2400
+                                    </option>
+                                    <option value="2">02 MES S/. 1800</option>
+                                </select>
+                                <!--  <div class="dropdown">
+                                    <button class="dropdown-toggle dropdown-input" type="button"
+                                        id="dropdownMenuButton1" data-bs-toggle="dropdown"
+                                        aria-expanded="false">
+                                        <span class="text-info">01 MES</span> <span class="text-muted">- S/.
+                                            2400</span>
+                                    </button>
+                                    <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenuButton1">
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="text-info">01 MES</span> <span class="text-muted">-
+                                                    S/. 2400</span>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item" href="#">
+                                                <span class="text-info">02 MES</span> <span class="text-muted">-
+                                                    S/. 1800</span>
+                                            </a>
+                                        </li>
+                                    </ul>
+                                </div> -->
+                            </div> <br>
+                            <div class="mb-4">
+                                <button type="button" class="btn btn-outline-info" data-bs-toggle="modal"
+                                    data-bs-target="#purchaseMadeModal" data-bs-whatever="@mdo">
+                                    <span class="fw-500">Ir a pagar</span>
+                                </button>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal purchase made-->
+    <div class="modal fade" id="purchaseMadeModal" tabindex="-1" aria-labelledby="purchaseMadeModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0">
+                    <button class="btn-close fs-4" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="modal-icon icon-success mb-2"></i>
+                        <h2 class="modal-title w-100 text-center fs-2 mt-3 mb-4" id="exampleModalLabel">
+                            Compra Realizada
+                        </h2>
+                        <p class="text-muted text-center mb-5">
+                            Tu compra ha sido realizada con éxito.
+                        </p>
+                        <button class="btn btn-info text-white mb-4" data-bs-toggle="modal"
+                            data-bs-target="#purchaseMadeNotModal" data-bs-whatever="@mdo">Ir a mis
+                            servicios</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal purchase not made-->
+    <div class="modal fade" id="purchaseMadeNotModal" tabindex="-1" aria-labelledby="purchaseMadeNotModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
+            <div class="modal-content border-0">
+                <div class="modal-header border-0">
+                    <button class="btn-close fs-4" type="button" data-bs-dismiss="modal" aria-label="Close">
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="d-flex flex-column align-items-center">
+                        <i class="modal-icon icon-close mb-2"></i>
+                        <h2 class="modal-title w-100 text-center fs-2 mt-3 mb-4" id="exampleModalLabel">
+                            Compra no realizada
+                        </h2>
+                        <p class="text-muted text-center mb-5">
+                            Tu compra no pudo ser procesada. Por favor, intenta en unos minutos.
+                        </p>
+                        <button class="btn btn-info text-white mb-4">Volver a inicio</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!--Modal contract service -->
+    <div class="modal fade" id="contractServiceModal" tabindex="-1" aria-labelledby="contractServiceModalLabel"
+        aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content border-0">
+                <button class="btn-close position-absolute m-3 right-0 fs-4" type="button"
+                    data-bs-dismiss="modal" aria-label="Close">
+                </button>
+                <div class="modal-header border-0">
+                    <h1 class="modal-title fw-bold w-100 text-center mt-3" id="contractServiceModalLabel">
+                        Contratar
+                        servicio</h1>
+                </div>
+                <div class="modal-body">
+                    <section class="section-services position-relative bg-white p-4 p-px-4">
+
+                        <ul class="nav nav-pills btn-group justify-content-center mb-5" id="pills-tab"
+                            role="tablist">
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link active" id="pill-month-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pill-month" type="button" role="tab"
+                                    aria-controls="pill-month" aria-selected="true">MENSUAL</button>
+                            </li>
+                            <li class="nav-item" role="presentation">
+                                <button class="nav-link" id="pill-year-tab" data-bs-toggle="pill"
+                                    data-bs-target="#pill-year" type="button" role="tab"
+                                    aria-controls="pill-year" aria-selected="false">ANUAL</button>
+                            </li>
+                        </ul>
+
+                        <div class="tab-content" id="pills-tabContent">
+                            <div class="tab-pane fade show active" id="pill-month" role="tabpanel"
+                                aria-labelledby="pill-month-tab">
+
+                                <div id="carouselContractService" class="carousel slide"
+                                    data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h6
+                                                                class="card-title fw-bold text-info text-center mb-3">
+                                                                GISSAT
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-1">
+                                                                <span class="fw-500 fs-3">S/1600</span>
+                                                                <span class="text-muted">/mes</span>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check me-1 text-orange fs-12px"></i>
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h6
+                                                                class="card-title fw-bold text-info text-center mb-3">
+                                                                Inspecciones de seguridad
+                                                                plan
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-2">
+                                                                <span class="fw-500 fs-3">S/1600</span><span
+                                                                    class="text-muted">/mes</span>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check me-1 text-orange fs-12px"></i>
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h6
+                                                                class="card-title fw-bold text-info text-center mb-3">
+                                                                Capacitaciones
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-2">
+                                                                <span class="fw-500 fs-3">S/1600</span><span
+                                                                    class="text-muted">/mes</span>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check me-1 text-orange fs-12px"></i>
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" style="left: -70px;"
+                                        data-bs-target="#carouselContractService" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" style="right: -70px;"
+                                        data-bs-target="#carouselContractService" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+
+                            <div class="tab-pane fade show" id="pill-year" role="tabpanel"
+                                aria-labelledby="pill-year-tab">
+                                <div id="pill-year" class="carousel slide" data-bs-ride="carousel">
+                                    <div class="carousel-inner">
+                                        <div class="carousel-item active">
+                                            <div class="row">
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h6
+                                                                class="card-title fw-bold text-info text-center mb-3">
+                                                                GISSAT
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-1">
+                                                                <span class="fw-500 fs-3">S/1600</span>
+                                                                <span class="text-muted">/mes</span>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check me-1 text-orange fs-12px"></i>
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h6
+                                                                class="card-title fw-bold text-info text-center mb-3">
+                                                                Inspecciones de seguridad
+                                                                plan
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-2">
+                                                                <span class="fw-500 fs-3">S/1600</span><span
+                                                                    class="text-muted">/mes</span>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check me-1 text-orange fs-12px"></i>
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12 col-md-4">
+                                                    <div class="card rounded-5 mb-3">
+                                                        <div class="card-body p-4">
+                                                            <h6
+                                                                class="card-title fw-bold text-info text-center mb-3">
+                                                                Capacitaciones
+                                                            </h6>
+                                                            <div
+                                                                class="d-flex justify-content-center align-items-center price pb-3 mb-2">
+                                                                <span class="fw-500 fs-3">S/1600</span><span
+                                                                    class="text-muted">/mes</span>
+                                                            </div>
+                                                            <hr>
+                                                            <div class="d-flex flex-column mb-3">
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check me-1 text-orange fs-12px"></i>
+                                                                    Acceso ilimitado
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Soporte las 24 hrs
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Capacitación gratuita
+                                                                </span>
+                                                                <span class="p-2 text-muted">
+                                                                    <i
+                                                                        class="icon-check text-orange me-1 fs-12px"></i>
+                                                                    Máximo 1,000 colaboradores
+                                                                </span>
+                                                            </div>
+                                                            <div class="d-flex justify-content-center mb-3">
+                                                                <button class="btn btn-info text-white">Escoger
+                                                                    plan</button>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <button class="carousel-control-prev" type="button" style="left: -70px;"
+                                        data-bs-target="#carouselContractService" data-bs-slide="prev">
+                                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Previous</span>
+                                    </button>
+                                    <button class="carousel-control-next" type="button" style="right: -70px;"
+                                        data-bs-target="#carouselContractService" data-bs-slide="next">
+                                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                        <span class="visually-hidden">Next</span>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
     </div>
 
     <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
