@@ -380,6 +380,14 @@ $sides: (x ,y, all, top, bottom, left, right);
     .p-p-lg-5 {
         padding: 5rem !important;
     }
+
+    // margins
+    .m-mr-lg-1 {
+        margin-right: 1rem !important;
+    }
+    .m-mr-lg-3 {
+        margin-right: 3rem !important;
+    }
 }   
 
 @media screen and(min-width: 1201px ) { 
@@ -445,6 +453,15 @@ $sides: (x ,y, all, top, bottom, left, right);
     }
     .p-p-xl-5 {
         padding: 5rem !important;
+    }
+    
+    
+    // margins
+    .m-mr-xl-3 {
+        margin-right: 3rem !important;
+    }
+    .m-mr-xl-6 {
+        margin-right: 6rem !important;
     }
 }
 

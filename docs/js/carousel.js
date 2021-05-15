@@ -63,9 +63,6 @@ if (carouselCreationGST != null) {
     })
 }
 
-
-
-
 function activeElements(index) {
     creationGSTlist.removeClass("active"); creationList.removeClass("active");
     $(creationGSTlist[index]).addClass('active');
@@ -86,11 +83,22 @@ function getActive(array) {
 
 
 //-- Todos lo servicios-  services.html--------------------
-var listServices = $(".list-services .item");
-$("#btnMoreServices").click(function () {
-    activeServices('all');
-});
-function activeServices(active) {
+let btnMoreServices = false;
+function viewALLServices() {
+    if( !btnMoreServices ) {
+        activeServices('all');
+        btnMoreServices =  true;
+        $('html, body').animate({ scrollTop: 3470 });
+        $("#btnMoreServices").text("Ver menos");
+    }else {
+        activeServices(8);
+        btnMoreServices = false;
+        location.href = "#listServices";
+        $("#btnMoreServices").text("Saber más");
+    }
+}
+function activeServices(active) { // params -->   all or number
+    var listServices = $(".list-services .item");
     for (let i = 0; i < listServices.length; i++) {
         const element = listServices[i];
         if (active != 'all') {

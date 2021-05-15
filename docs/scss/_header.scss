@@ -124,7 +124,14 @@
     }
 
 }
-
 .top-navbar {
     min-height: 75px;
 }
+
+@media screen and(min-width: 1200px ) { 
+    .navbar-expand-lg .navbar-nav .nav-link {
+      padding-right: 1.3rem;
+      padding-left: 1.3rem;
+    }
+}
+  

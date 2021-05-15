@@ -187,9 +187,48 @@ select {
         border-color: var(--bs-info);
     }
 }
+@media screen and(max-width:768px ) {    
+    .tooltip .default  {
+        min-width:200px; 
+        top:-20px;
+        left:50%;
+        transform:translate(-50%, -100%);
+        padding:10px 20px;
+        color:#ffffff;
+        background-color:var(--bs-info);
+        font-weight:normal;
+        font-size:13px;
+        border-radius:8px;
+        position:absolute;
+        z-index:99999999;
+        box-sizing:border-box;
+        visibility:hidden; opacity:0; transition:opacity 0.8s;
+    }
+    .tooltip:hover .default  {
+        visibility:visible; opacity:1;
+    }
+    .tooltip .default i {
+        position:absolute;
+        top:100%;
+        left:50%;
+        margin-left:-12px;
+        width:24px;
+        height:12px;
+        overflow:hidden;
+    }
+    .tooltip .default i::after{
+        content:'';
+        position:absolute;
+        width:12px;
+        height:12px;
+        left:50%;
+        transform:translate(-50%,-50%) rotate(45deg);
+        background-color:var(--bs-info);
+    }
+}
 
-// @media screen and(min-width:768px ) {    
-   
+//left
+@media screen and(min-width:768px ) {    
     .tooltip .left {
         min-width:280px; 
         top:50%;
@@ -349,7 +388,8 @@ select {
         transform:translate(-50%,-50%) rotate(45deg);
         background-color:var(--bs-info);
     }
-// }
+}
+
 //End tooltip
 
 
