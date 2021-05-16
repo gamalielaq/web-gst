@@ -154,10 +154,10 @@ var swiper = new Swiper('.swiper-services', {
         spaceBetween: 10,
       },
       768: {
-        slidesPerView: 4,
+        slidesPerView: 3, 
         spaceBetween: 10,
       },
-      1025: {
+      1024: {
         slidesPerView: 4,
         spaceBetween: 10,
       },
