@@ -1,12 +1,48 @@
-.animation-text {
-  opacity: 0;
-  transition: all 2s;
+//--- keyframes
+@mixin keyframes($from, $to, $position) {
+    @if $position == x { 
+        @keyframes showX-#{$from} { // example :>
+            0% {
+                transform:translateX(#{$from}px);
+            }
+            100% {
+                transform:translateX(#{$to}px);
+            }
+        }
+    }
+    @if $position == y {  // 
+        @keyframes showY-#{$from} {
+            0% {
+                transform:translateY(#{$from}px);
+            }
+            100% {
+                transform:translateY(#{$to}px);
+            }
+        }
+    } 
 }
+  
+@mixin showX( $from, $time ) {  
+    // Start horizontal position: rigth+ to left-
+    @include keyframes($from, 0, x);
+    animation: showX-#{$from} $time;
+}
+@mixin showY( $from, $time ) { 
+    // Start Vertical position: bottom+ to top-
+    @include keyframes($from, 0, y);
+    animation: showY-#{$from} $time;
+}
+//--- End keyframes
+  
 
-.op-1 {
-  opacity: 1 !important;
+.animation-text {
+    opacity: 0;
+    transition: all 2s;
 }
- .particle {
+.op-1 {
+    opacity: 1 !important;
+}
+.particle {
     position: absolute;
     width: 0;
     height: 0;
@@ -14,258 +50,99 @@
     border-top: 48px solid transparent;
     border-left: 48px solid transparent;
     z-index: 1;
+}
     
-  }
-    
-  .animation {
+.animation {
     opacity: 0;
     transition: all 0.5s;
-  }
-  .showTop {
-    animation: showTop 1.5s;
-  }
-
-  .showBottom {
-    animation: showBottom 1.5s;
-  }
-
-  .showLeft {
-    animation: showLeft 1.5s;
-  }
-
-  .showRight {
-    animation: showRight 1.5s;
-  }
-  
-  .showTopButton {
-    animation: showTopButton 1.5s;
-  }
-
-  .scale {
+}
+.scale {
     animation: scale 1.1s;
-  }
-
-  //slider
-  .slider-animation {
+}
+  
+//slider
+.slider-animation {
     .btn-warning {
-      @extend .showTopButton;
+        @include showY(350, 1.5s);
     }
     .banner-img-home {
-      @extend .scale;
-      
+        @extend .scale;
     }
-  }
-
-  .card-animation {
-      .animated-c-1 {
-        @extend .showRight;
-      }
-      .animated-c-2 {
-        @extend .showTop;
-      }
-      .animated-c-3 {
-        @extend .showLeft;
-      }
-  }
-
+}
+.card-animation {
+    .animated-c-1 {
+        @include showX(-123, 1.5s);
+    }
+    .animated-c-2 {
+        @include showY(60, 1.5s);
+    }
+    .animated-c-3 {
+        @include showX(123, 1.5s);
+    }
+}
 
 //section section-benefits
 .section-benefits {
-  .carousel-benefit-list li.active {
-    animation: showTopB 0.5s;
-    color: var(--bs-orange) !important;
-    font-weight: bold;
-    font-size: 15px;
-  }
+    .carousel-benefit-list li.active {
+        @include showY(-30, 0.5s);
+        color: var(--bs-orange) !important;
+        font-weight: bold;
+        font-size: 15px;
+    }
 }
 .actB {
-  animation: actB 0.5s;
-}
-@keyframes actB {
-  0% {
-    transform:translateY(30px);
-  }
-  100% {
-    transform:translateY(0);
-  }
-}
-
-@keyframes showTopB {
-  0% {
-    transform:translateY(-30px);
-  }
-  100% {
-    transform:translateY(0);
-  }
+    @include showY(30, 0.5s);
 }
 //End section section-benefits
 
-
 .CreationGST-list .item.active {
-  animation: hlf-fade 0.5s;
-   @media screen and(min-width:768px) { 
-    animation: showLeft500 1s;
-   }
-   opacity: 1;
-   z-index: 9999;
-   display: block;
+    opacity: 1;
+    z-index: 9999;
+    display: block;
+    animation: hlf-fade 0.5s;
+
+    @media screen and(min-width:768px) { 
+        @include showX(700, 1.5s);
+    }
+    @media screen and(min-width:992px) { 
+        @include showX(700, 1.5s);
+    }
 }
 
 .creation-list li {
-  padding: 0.5rem  1rem;  
-  transition: all 0.5s;
-  text-align: center;
-  font-size: 13.5px;
-  @media screen and(min-width:768px) {
-    min-width: 85px;
-    font-size: 1.5rem; 
-  }
+    padding: 0.5rem  1rem;  
+    transition: all 0.5s;
+    text-align: center;
+    font-size: 13.5px;
+    @media screen and(min-width:768px) {
+      font-size: 1rem; 
+    }
+    @media screen and(min-width:992px) {
+      min-width: 85px;
+      font-size: 1.5rem; 
+    }
 }
 .creation-list li.active {
     transform: scale(1.7);
-
-  span {
-    color: var(--bs-info);
-  }
+    span {
+      color: var(--bs-info);
+    }
 }
 
-@keyframes showLeft500 {
-  0% {
-    transform:translateX(700px);
-  }
-  100% {
-    transform:translateX(0);
-  }
+// keyframes
+@keyframes scale {
+    0% {
+        transform:scale(1.05);
+    }
+    100% {
+       transform:scale(1);
+    }
 }
-
-//----------------
-  @keyframes showTopButton {
+@keyframes hlf-fade { // Animation fade
     0% {
-      transform:translateY(350px);
+        opacity: 0;
     }
     100% {
-      transform:translateY(0);
+        opacity: 1;
     }
-  }
-  
-  @keyframes showTop {
-    0% {
-      transform:translateY(60px);
-    }
-    100% {
-      transform:translateY(0);
-    }
-  }
-  @keyframes showBottom {
-    0% {
-      transform:translateY(-350px);
-    }
-    100% {
-      transform:translateY(0);
-    }
-  }
-
-  @keyframes showLeft {
-    0% {
-      transform:translateX(123px);
-    }
-    100% {
-      transform:translateX(0);
-    }
-  }
-
-  @keyframes showRight {
-    0% {
-      transform:translateX(-123px);
-    }
-    100% {
-      transform:translateX(0);
-    }
-  }
-
-  @keyframes scale {
-    0% {
-      transform:scale(1.05);
-    }
-    100% {
-      transform:scale(1);
-    }
-  }
-
-  // --------blog------------------------------------------
-  @-webkit-keyframes particle-animation-1 {
-    100% {
-      -webkit-transform: translate3d(3vw, 87vh, 5px);
-              transform: translate3d(3vw, 87vh, 5px);
-    }
-  }
-  
-  @keyframes particle-animation-1 {
-    100% {
-      -webkit-transform: translate3d(3vw, 87vh, 5px);
-              transform: translate3d(3vw, 87vh, 5px);
-    }
-  }
-  
-  .particle:nth-child(1) {
-    -webkit-animation: particle-animation-1 120s infinite;
-    animation: particle-animation-1 120s infinite;
-    opacity: 0.22;
-    -webkit-animation-delay: -0.2s;
-            animation-delay: -0.2s;
-    -webkit-transform: translate3d(0vw, 3vh, 2px);
-            transform: translate3d(0vw, 3vh, 2px);
-    border-bottom: 79px solid #f0ad
-  }
-  
-  @-webkit-keyframes particle-animation-2 {
-    100% {
-      -webkit-transform: translate3d(82vw, 33vh, 99px);
-              transform: translate3d(82vw, 33vh, 99px);
-    }
-  }
-  
-  @keyframes particle-animation-2 {
-    100% {
-      -webkit-transform: translate3d(90vw, 33vh, 99px);
-              transform: translate3d(90vw, 33vh, 99px);
-    }
-  }
-  .particle:nth-child(2) {
-    -webkit-animation: particle-animation-2 60s infinite;
-            animation: particle-animation-2 60s infinite;
-    opacity: 0.45;
-    -webkit-animation-delay: -0.4s;
-            animation-delay: -0.4s;
-    -webkit-transform: translate3d(92vw, 70vh, 76px);
-            transform: translate3d(92vw, 70vh, 76px);
-    border-bottom: 79px solid #56d926;
-  }
- 
-  @keyframes hlf-fade {
-    0% {
-      opacity: 0;
-    }
-    100% {
-      opacity: 1;
-    }
-  }
-
-  // -----------------------------------------------------
-  .lds-dual-ring {
-    display: inline-block;
-    width: 80px;
-    height: 80px;
-  }
-  .lds-dual-ring:after {
-    content: " ";
-    display: block;
-    width: 64px;
-    height: 64px;
-    margin: 8px;
-    border-radius: 50%;
-    border: 6px solid red;
-    border-color: red transparent red transparent;
-    animation: lds-dual-ring 1.2s linear infinite;
-  }
- 
+}

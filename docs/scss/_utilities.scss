@@ -227,9 +227,12 @@ $sides: (x ,y, all, top, bottom, left, right);
     }
 }
 
-@media screen and(min-width: 769px ) {
+@media screen and(min-width: 768px ) {
     .w-md-35 {
         width: 35% !important;
+    }
+    .w-md-45 {
+        width: 45% !important;
     }
     .w-md-50 {
         width: 50% !important;
@@ -330,6 +333,9 @@ $sides: (x ,y, all, top, bottom, left, right);
     }
 }
 @media screen and(min-width: 992px ) {
+    .w-lg-35{
+        width: 35% !important;
+    }
     .w-lg-50 {
         width: 50% !important;
     }
@@ -454,7 +460,10 @@ $sides: (x ,y, all, top, bottom, left, right);
     .p-p-xl-5 {
         padding: 5rem !important;
     }
-    
+    .p-px-lg-6 {
+        padding-right: 6rem;
+        padding-left: 6rem;
+    }
     
     // margins
     .m-mr-xl-3 {
@@ -522,4 +531,8 @@ $sides: (x ,y, all, top, bottom, left, right);
 
 .object-fit-cover {
     object-fit: cover;
+}
+
+.zi-1 {
+    z-index: 1 !important;
 }
