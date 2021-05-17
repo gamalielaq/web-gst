@@ -1,3 +1,4 @@
+//Fuctions
 @function prefix-mp($property) {
     @if $property == margin {
         @return  'm';
@@ -7,79 +8,138 @@
     }
 }
 
-//padding and margins
+@function getPrefixSide($side) {
+
+    @if $side == left {
+        @return '-left';
+    }
+    @if $side == right {
+        @return '-right';
+    }
+    @if $side == top {
+        @return '-top';
+    }
+    @if $side == bottom  {
+        @return '-bottom';
+    }
+     @else {
+        @return '';
+    }
+
+}
+
+@function getClassInfix($infix) { // clsInfix: sm, md, lg  ..
+    @if $infix != '' {
+        @return -$infix;
+    } @else {
+        @return '';
+    }
+}
+
+
+// Breakpoints
+$breakpoints: (
+    xs: 0,  
+    sm: 576px,  
+    md: 768px,
+    lg: 992px,
+    xl: 1200px
+);
+
+
+$sides: ( 
+    all     :'',
+    left    :'l',
+    right   :'r',   
+    bottom  :'b',
+    top     :'t',
+    x       :'x',
+    y       :'y'
+    
+ );
+
+//create margins and paddings
 /*
     Use class: p-p or m-m and  prefix t, r, b, l --> value 0 to 10
     example: p-p-0 , p-pt-5  ---  m-m-2 , m-ml-3
 */
-
-$max: 10; $offset: 1; $unit: 'rem'; 
-$sides: (x ,y, all, top, bottom, left, right);
-
-@mixin padding-margin($property) {
+$max: 10; $offset: 1; $unit: 'rem';
+@mixin paddingMargin($property, $classInfix) { //$classInfix: 
     
-    $i: 0;
-
     $prefix: prefix-mp($property);
+    $clsInfix: getClassInfix($classInfix);
 
-    @while $i <= $max {
+    @each $side, $sidePrefix in $sides {
+        $i: 0;
+        $pfxSide: getPrefixSide($side);  
+        
+        @while $i <= $max {
 
-        @each $side in $sides {
-            @if $side == all {
-                .#{$prefix}-#{$prefix}-#{$i} { 
-                    #{$property}: #{$i + $unit} !important;
+            .#{$prefix}-#{$prefix}#{$sidePrefix}#{$clsInfix}-#{$i} { 
+               
+                @if($side == x) {
+                    #{$property}-right#{$pfxSide}: #{$i + $unit} !important;
+                    #{$property}-left#{$pfxSide}: #{$i + $unit} !important;
                 }
-            }
-            @if $side == x {
-                .#{$prefix}-#{$prefix}x-#{$i} { 
-                    #{$property}-left: #{$i + $unit} !important;
-                    #{$property}-right: #{$i + $unit} !important;
+                @else if ($side == y) {
+                    #{$property}-top#{$pfxSide}: #{$i + $unit} !important;
+                    #{$property}-bottom#{$pfxSide}: #{$i + $unit} !important;
                 }
-            }
-            @if $side == y {
-                .#{$prefix}-#{$prefix}y-#{$i} { 
-                    #{$property}-top: #{$i + $unit} !important;
-                    #{$property}-bottom: #{$i + $unit} !important;
+                @else {
+                    #{$property}#{$pfxSide}: #{$i + $unit} !important;
                 }
-            }
-            @if $side == right {
-                .#{$prefix}-#{$prefix}r-#{$i} { 
-                    #{$property}-#{$side}: #{$i + $unit} !important;
-                }
-            }
-            @if $side == top {
-                .#{$prefix}-#{$prefix}t-#{$i} { 
-                    #{$property}-#{$side}: #{$i + $unit} !important;
-                }
-            }
-            @if $side == bottom {
-                .#{$prefix}-#{$prefix}b-#{$i} { 
-                    #{$property}-#{$side}: #{$i + $unit} !important;
-                }
-            }
-            @if $side == left {
-                .#{$prefix}-#{$prefix}l-#{$i} { 
-                    #{$property}-#{$side}: #{$i + $unit} !important;
-                }
-            }
-            @if $side == right {
-                .#{$prefix}-#{$prefix}r-#{$i} { 
-                    #{$property}-#{$side}: #{$i + $unit} !important;
-                }
-            }
-        }
-
-        $i: $i + $offset;
-    } 
+            }                    
+            $i: $i + $offset;
+        }  
+    }
 }
 
-@include padding-margin('margin');
-@include padding-margin('padding');
+// WidthS
 
+@mixin WidthS($classInfix) {
+    $max: 100; $offset: 5; $unit: '%'; 
+    $i: 0;
+    $clsInfix: getClassInfix($classInfix);
+    @while $i <= $max {
+        .w#{$clsInfix}-#{$i} { 
+            width: #{$i+$unit} !important;
+        }               
+        $i: $i + $offset;
+    }
+}
+@mixin Heights($classInfix) {
+    $max: 100; $offset: 5; $unit: '%'; 
+    $i: 0;
+    $clsInfix: getClassInfix($classInfix);
+    @while $i <= $max {
+        .h#{$clsInfix}-#{$i} { 
+            height: #{$i+$unit} !important;
+        }               
+        $i: $i + $offset;
+    }
+}
 
-// .mt-3-5 {
-//     margin-top: 3.5rem;
-// }
+@mixin createUtilities() {
+    @each $classInfix, $break in $breakpoints {
+
+        @if $break != 0 {        
+            @media screen and(min-width: $break) {
+                @include WidthS($classInfix);
+                @include Heights($classInfix);
+                @include paddingMargin('padding', $classInfix);
+                @include paddingMargin('margin', $classInfix);
+            }
+
+        } @else {
+            @include WidthS('');
+            @include Heights('');
+            @include paddingMargin('padding', '');
+            @include paddingMargin('margin', '');
+        }
+    }
+}
+
+@include createUtilities();
 
 .fw-500 {
     font-weight: 500 !important;
@@ -172,44 +232,6 @@ $sides: (x ,y, all, top, bottom, left, right);
     font-size: 50px !important;
 }
 
-.w-35 {
-    width: 35% !important;
-}
-.w-50 {
-    width: 50% !important;
-}
-.w-55 {
-    width: 55% !important;
-}
-.w-60 {
-    width: 60% !important;
-}
-.w-65 {
-    width: 65% !important;
-}
-.w-70 {
-    width: 70% !important;
-}
-.w-75 {
-    width: 75% !important;
-}
-.w-80 {
-    width: 80% !important;
-}
-.w-85 {
-    width: 85% !important;
-}
-.w-90 {
-    width: 90% !important;
-}
-.w-95 {
-    width: 95% !important;
-}
-.w-100 {
-    width: 100% !important;
-}
-
-
 .right-0 {
     right: 0;
 }
@@ -220,260 +242,6 @@ $sides: (x ,y, all, top, bottom, left, right);
 .cursor-pointer {
     cursor: pointer;
 }
-
-@media screen and(min-width: 720px ) {
-    .w-sm-100 {
-        width: 100% !important;
-    }
-}
-
-@media screen and(min-width: 768px ) {
-    .w-md-35 {
-        width: 35% !important;
-    }
-    .w-md-45 {
-        width: 45% !important;
-    }
-    .w-md-50 {
-        width: 50% !important;
-    }
-    .w-md-55 {
-        width: 55% !important;
-    }
-    .w-md-60 {
-        width: 60% !important;
-    }
-    .w-md-65 {
-        width: 65% !important;
-    }
-    .w-md-70 {
-        width: 70% !important;
-    }
-    .w-md-75 {
-        width: 75% !important;
-    }
-    .w-md-80 {
-        width: 80% !important;
-    }
-    .w-md-85 {
-        width: 85% !important;
-    }
-    .w-md-90 {
-        width: 90% !important;
-    }
-    .w-md-95 {
-        width: 95% !important;
-    }
-    .w-md-100 {
-        width: 100% !important;
-    }
-
- //paddings 
-    .p-p-md-1 {
-        padding: 1rem !important;
-    }
-    .p-p-md-2 {
-        padding: 2rem !important;
-    }
-    .p-p-md-3 {
-        padding: 3rem !important;
-    }
-    .p-p-md-4 {
-        padding: 4rem !important;
-    }
-    .p-p-md-5 {
-        padding: 5rem !important;
-    }
-    .p-pt-md-12 {
-        padding-top: 12rem !important;
-    }
-    .p-pt-md-8   {
-        padding-top: 8rem !important;
-    }
-    .p-px-md-1-5 {
-        padding-right: 1.5rem;
-        padding-left: 1.5rem;
-    }
-    .p-px-md-6 {
-        padding-right: 6rem;
-        padding-left: 6rem;
-    }
-    .p-px-md-7 {
-        padding-right: 7rem;
-        padding-left: 7rem;
-    }
-
-    //margins
-
-    .m-mb-md-0 {
-        margin-bottom: 0rem !important;
-    }
-    .m-mr-md-6 {
-        margin-right: 6rem !important;
-    }
-    .m-mb-md-5 {
-        margin-bottom: 5rem !important;
-    }
-
-    
-
-
-    .m-mt-md-3 {
-        margin-top: 3rem !important;
-    }
-
-    // heights
-    .h-md-100 {
-        height: 100% !important;
-    }
-
-    //sizez
-    .fs-md-105px {
-        font-size:105px;
-    }
-}
-@media screen and(min-width: 992px ) {
-    .w-lg-35{
-        width: 35% !important;
-    }
-    .w-lg-50 {
-        width: 50% !important;
-    }
-    .w-lg-55 {
-        width: 55% !important;
-    }
-    .w-lg-60 {
-        width: 60% !important;
-    }
-    .w-lg-65 {
-        width: 65% !important;
-    }
-    .w-lg-70 {
-        width: 70% !important;
-    }
-    .w-lg-75 {
-        width: 75% !important;
-    }
-    .w-lg-80 {
-        width: 80% !important;
-    }
-    .w-lg-85 {
-        width: 85% !important;
-    }
-    .w-lg-90 {
-        width: 90% !important;
-    }
-    .w-lg-95 {
-        width: 95% !important;
-    }
-    .w-lg-100 {
-        width: 100% !important;
-    }
-
-     //paddings 
-    .p-p-lg-1 {
-        padding: 1rem !important;
-    }
-    .p-p-lg-2 {
-        padding: 2rem !important;
-    }
-    .p-p-lg-3 {
-        padding: 3rem !important;
-    }
-    .p-p-lg-4 {
-        padding: 4rem !important;
-    }
-    .p-p-lg-5 {
-        padding: 5rem !important;
-    }
-
-    // margins
-    .m-mr-lg-1 {
-        margin-right: 1rem !important;
-    }
-    .m-mr-lg-3 {
-        margin-right: 3rem !important;
-    }
-}   
-
-@media screen and(min-width: 1201px ) { 
-    .w-xl-50 {
-        width: 50% !important;
-    }
-    .w-xl-55 {
-        width: 55% !important;
-    }
-    .w-xl-60 {
-        width: 60% !important;
-    }
-    .w-xl-65 {
-        width: 65% !important;
-    }
-    .w-xl-70 {
-        width: 70% !important;
-    }
-    .w-xl-75 {
-        width: 75% !important;
-    }
-    .w-xl-80 {
-        width: 80% !important;
-    }
-    .w-xl-85 {
-        width: 85% !important;
-    }
-    .w-xl-90 {
-        width: 90% !important;
-    }
-    .w-xl-95 {
-        width: 95% !important;
-    }
-    .w-xl-100 {
-        width: 100% !important;
-    }
-
-    //paddings 
-
-    .p-p-xl-0 {
-        padding: 0rem !important;
-    }
-    .p-p-xl-0-5 {
-        padding: 0.5rem !important;
-    }
-    .p-p-xl-1 {
-        padding: 1rem !important;
-    }
-    .p-p-xl-1-5 {
-        padding: 1.5rem !important;
-    }
-    .p-p-xl-2 {
-        padding: 2rem !important;
-    }
-    .p-p-xl-3 {
-        padding: 3rem !important;
-    }
-    .p-p-xl-3 {
-        padding: 3rem !important;
-    }
-    .p-p-xl-4 {
-        padding: 4rem !important;
-    }
-    .p-p-xl-5 {
-        padding: 5rem !important;
-    }
-    .p-px-lg-6 {
-        padding-right: 6rem;
-        padding-left: 6rem;
-    }
-    
-    // margins
-    .m-mr-xl-3 {
-        margin-right: 3rem !important;
-    }
-    .m-mr-xl-6 {
-        margin-right: 6rem !important;
-    }
-}
-
 
 //roundeds
 .rounded-left-3 {
@@ -535,4 +303,11 @@ $sides: (x ,y, all, top, bottom, left, right);
 
 .zi-1 {
     z-index: 1 !important;
+}
+
+@media screen and(min-width: 1200px ) {
+    //sizez
+    .fs-xl-105px {
+        font-size:105px;
+    }
 }

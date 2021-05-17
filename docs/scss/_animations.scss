@@ -102,7 +102,7 @@
     animation: hlf-fade 0.5s;
 
     @media screen and(min-width:768px) { 
-        @include showX(700, 1.5s);
+        @include showX(300, 1.5s);
     }
     @media screen and(min-width:992px) { 
         @include showX(700, 1.5s);
