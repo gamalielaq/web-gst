@@ -8,7 +8,7 @@
     width: 100%;
     height: 100vh;
     
-    .loader-wareper {
+    .loader-waraper {
       width: 100%;
       height: 100%;
       position: absolute;
@@ -16,39 +16,21 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-
-      .loader-icon {
-        z-index: 1;
-        margin-bottom: 1.3rem;
-      }
-      .loader-icon::after {
-        content: url('../../assets/img/casco.svg');
-        display: flex;
-        animation: icon-load 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-        opacity: 1;
-      }
-      
-      .loader-icon-rout::after {
-        content: url('../../assets/img/rueda.svg');
-        display: flex;
-        animation: icon-rout 1.2s infinite cubic-bezier(0.215, 0.61, 0.355, 1);
-      }
-      .loader-icon-rout {
-        animation: lds-dual-ring 1.2s linear infinite;
-        line-height: 0;
-        position: absolute;
-        top: 46.5%;
-      }
     }
+
     .progress {
       
+      margin-top: 0.5rem;  
       width: 20%;
+
       @media screen and(min-width: 769px){    
         width: 7%;
       }
+      
       height: 5px;
       background:#acacac;
     }
+
     .progress-bar {
         background: #ffff;
     }
@@ -56,47 +38,4 @@
 
 .hide-scroll {
   overflow: hidden;
-}
-
-
-@keyframes icon-load {
-  0% {
-    transform: scale(0.95);
-    opacity: 1;
-  }
-  33% {
-    transform: scale(1);
-  }
-  66% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-  }
-}
-@keyframes icon-rout {
-  0% {
-    transform: scale(0.95);
-    opacity: 1;
-  }
-  33% {
-    transform: scale(1);
-  }
-  66% {
-    transform: scale(0.95);
-  }
-  100% {
-    transform: scale(0.9);
-    opacity: 0.3;
-  }
-}
-
-
-@keyframes lds-dual-ring {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
