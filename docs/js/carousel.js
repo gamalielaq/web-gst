@@ -83,20 +83,18 @@ function getActive(array) {
 
 
 //-- Todos lo servicios-  services.html--------------------
+
+var benefits = $(".carousel-benefit-list li");
 let btnMoreServices = false;
-function viewALLServices() {
+$("#btnMoreServices").click(function () {
     if( !btnMoreServices ) {
-        activeServices('all');
         btnMoreServices =  true;
-        $('html, body').animate({ scrollTop: 3470 });
-        $("#btnMoreServices").text("Ver menos");
+        $(this).text("Ver menos");
     }else {
-        activeServices(8);
-        btnMoreServices = false;
-        location.href = "#listServices";
-        $("#btnMoreServices").text("Saber más");
+        $(this).text("Saber más");
     }
-}
+});
+
 function activeServices(active) { // params -->   all or number
     var listServices = $(".list-services .item");
     for (let i = 0; i < listServices.length; i++) {
