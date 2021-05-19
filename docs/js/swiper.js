@@ -164,3 +164,36 @@ var swiper = new Swiper('.swiper-services', {
     }
   });
 
+   // swiper-services-detail
+   var swiper = new Swiper('.swiper-team-developer', {
+    slidesPerView: 1,
+    spaceBetween: 10,
+    loop: true,
+    autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+    },
+    navigation: {
+      nextEl: '.btn-next',
+      prevEl: '.btn-prev',
+    },
+    pagination: {
+      el: '.swiper-pagination',
+      clickable: true,
+    },
+    breakpoints: {
+      640: {
+        slidesPerView: 2,
+        spaceBetween: 10,
+      },
+      768: {
+        slidesPerView: 3, 
+        spaceBetween: 10,
+      },
+      1024: {
+        slidesPerView: 3,
+        spaceBetween: 10,
+      }
+    }
+  });
+
