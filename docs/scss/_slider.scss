@@ -6,11 +6,21 @@
 }
 .warapepr {
     position: relative;
-    top: -35px;
+    bottom: 2.5rem;
+
     @media screen and(min-width: 992px) {  
-        top: -55px;
+        bottom: 4rem;
+    }
+
+    
+}
+.warapepr.profile {
+    bottom: 8rem;
+    @media screen and(min-width: 1400px) {  
+        bottom: 14rem;
     }
 }
+
 .slider { 
     
     //home
@@ -26,7 +36,6 @@
 
     .banner {
         object-fit: cover;
-        // position: absolute
     }
 
     @media screen and(max-width: 768px) {    
@@ -35,23 +44,6 @@
         }
     }
     
-    // contact
-    .contact-banner { 
-        @extend %banner; 
-        background-image: url('../../assets/img/banner-2.png');
-        height: 150px;
-        @media screen and(min-width: 769px){    
-            padding: 20rem 0 0rem 0;
-        }
-    }
-
-    // .services-banner {
-    //     @extend %banner; 
-    //     object-fit: cover;
-    //     @media screen and(min-width: 769px){    
-    //         height: 475px;
-    //     }
-    // }
     .slide-heith {
         height: 350px;
         @media screen and(min-width: 769px){    

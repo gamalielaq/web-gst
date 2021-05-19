@@ -4,7 +4,7 @@
 @import url("https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap");
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css");
-.slider .contact-banner, .slider .home-slider {
+.slider .home-slider {
   background-repeat: round;
   width: 100%;
   height: 390px;
@@ -13,11 +13,20 @@
 
 .warapepr {
   position: relative;
-  top: -35px;
+  bottom: 2.5rem;
 }
 @media screen and (min-width: 992px) {
   .warapepr {
-    top: -55px;
+    bottom: 4rem;
+  }
+}
+
+.warapepr.profile {
+  bottom: 8rem;
+}
+@media screen and (min-width: 1400px) {
+  .warapepr.profile {
+    bottom: 14rem;
   }
 }
 
@@ -37,15 +46,6 @@
 @media screen and (max-width: 768px) {
   .slider .h-banner, .slider .banner {
     height: 275px;
-  }
-}
-.slider .contact-banner {
-  background-image: url("../../assets/img/banner-2.png");
-  height: 150px;
-}
-@media screen and (min-width: 769px) {
-  .slider .contact-banner {
-    padding: 20rem 0 0rem 0;
   }
 }
 .slider .slide-heith {
@@ -11520,12 +11520,6 @@ ul li {
   background: white;
   margin-left: auto;
   margin-right: auto;
-  bottom: 30px;
-}
-@media screen and (min-width: 768px) {
-  .section-detail-services {
-    bottom: 100px;
-  }
 }
 
 .section-ds-security {
