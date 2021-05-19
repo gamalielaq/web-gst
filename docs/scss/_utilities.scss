@@ -305,9 +305,18 @@ $max: 10; $offset: 1; $unit: 'rem';
     z-index: 1 !important;
 }
 
+@media screen and(min-width: 992px ) {
+    .fs-lg-70px {
+        font-size: 70px !important;
+    }
+}
 @media screen and(min-width: 1200px ) {
     //sizez
     .fs-xl-105px {
         font-size:105px;
     }
+    .position-xl-relative {
+        position: relative;
+    }
 }
+

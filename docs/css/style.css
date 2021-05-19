@@ -11,6 +11,16 @@
   z-index: -1;
 }
 
+.warapepr {
+  position: relative;
+  top: -35px;
+}
+@media screen and (min-width: 992px) {
+  .warapepr {
+    top: -55px;
+  }
+}
+
 .slider .home-slider {
   background-repeat: no-repeat;
   object-fit: cover;
@@ -11967,7 +11977,12 @@ select option {
   font-size: 2.5rem;
   font-family: "DM Sans", sans-serif;
 }
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 992px) {
+  .section-users .text-number {
+    font-size: 3rem;
+  }
+}
+@media screen and (min-width: 1400px) {
   .section-users .text-number {
     font-size: 4rem;
   }
@@ -17159,9 +17174,18 @@ select option {
   z-index: 1 !important;
 }
 
+@media screen and (min-width: 992px) {
+  .fs-lg-70px {
+    font-size: 70px !important;
+  }
+}
 @media screen and (min-width: 1200px) {
   .fs-xl-105px {
     font-size: 105px;
+  }
+
+  .position-xl-relative {
+    position: relative;
   }
 }
 
