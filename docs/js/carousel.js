@@ -113,7 +113,3 @@ function activeServices(active) { // params -->   all or number
     }
 }
 activeServices(8);
-
-
-//paginator
-// $('#example').paginate();
