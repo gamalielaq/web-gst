@@ -12732,6 +12732,7 @@ select option {
 */
 .paginate {
   list-style: none;
+  padding: 0;
 }
 
 .paginate-pagination {

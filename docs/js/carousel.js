@@ -116,4 +116,4 @@ activeServices(8);
 
 
 //paginator
-$('#example').paginate();
+// $('#example').paginate();
