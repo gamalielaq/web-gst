@@ -91,6 +91,7 @@ $("#btnMoreServices").click(function () {
         btnMoreServices =  true;
         $(this).text("Ver menos");
     }else {
+        btnMoreServices =  false;
         $(this).text("Saber más");
     }
 });
@@ -112,3 +113,7 @@ function activeServices(active) { // params -->   all or number
     }
 }
 activeServices(8);
+
+
+//paginator
+$('#example').paginate();
