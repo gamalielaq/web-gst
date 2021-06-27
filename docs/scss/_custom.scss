@@ -1,6 +1,6 @@
 @font-face{
   font-family:"fabfeltscript-bold";
-  src:url("../../assets/fonts/FabfeltScript-Bold.otf") format("woff")
+  src:url("../assets/fonts/FabfeltScript-Bold.otf") format("woff")
 }
 @import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;1,100;1,200&display=swap');
@@ -16,9 +16,9 @@
 }
 
 // Required for custom bootrap
-@import '../../assets/bootstrap/scss/functions';
-@import '../../assets/bootstrap/scss/variables';
-@import '../../assets/bootstrap/scss/mixins';
+@import '../assets/bootstrap/scss/functions';
+@import '../assets/bootstrap/scss/variables';
+@import '../assets/bootstrap/scss/mixins';
 
 //gst colors
 $orange:  #FC931B;
@@ -56,8 +56,8 @@ $font-family-base: $font-sans-seriff;
 $body-bg: $gray-0;
 
 //carousel
-$carousel-control-prev-icon-bg: url('../../assets/img/btn-prev.svg');
-$carousel-control-next-icon-bg: url('../../assets/img/btn-next.svg');
+$carousel-control-prev-icon-bg: url('../assets/img/btn-prev.svg');
+$carousel-control-next-icon-bg: url('../assets/img/btn-next.svg');
 // $carousel-control-prev-hover-icon-bg
 // $carousel-control-next-hover-icon-bg
 $carousel-control-opacity: 1;
@@ -93,7 +93,7 @@ $form-select-border-color: $gray-0;
 $btn-border-radius: 6px;
 $btn-padding-y: 0.6rem; 
 $btn-padding-x: 2.5rem;
-$btn-close-bg: url('../../assets/img/close.svg');
+$btn-close-bg: url('../assets/img/close.svg');
 
 
 //variables gst
@@ -128,6 +128,4 @@ p {
 .col-form-label {
   font-size: 15px !important;
 }
-
-@import '../../assets/bootstrap/scss/bootstrap.scss'
 
